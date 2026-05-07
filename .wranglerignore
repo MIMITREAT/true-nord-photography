@@ -1,0 +1,4 @@
+assets/Photos/
+.claude/
+.wrangler/
+node_modules/
