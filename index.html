@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="True Nord — Minnesota landscape, wildlife, and nature photography by TJ Nordberg. Fine art prints available.">
+  <meta name="theme-color" content="#c87941">
+  <title>True Nord | Minnesota Fine Art Photography & Prints</title>
+  <link rel="canonical" href="https://truenord.photo/">
+
+  <meta property="og:title"       content="True Nord | Minnesota Fine Art Photography & Prints">
+  <meta property="og:description" content="Minnesota landscape, wildlife, and nature photography by TJ Nordberg. Fine art prints available.">
+  <meta property="og:image"       content="https://truenord.photo/assets/og-image.jpg">
+  <meta property="og:url"         content="https://truenord.photo/">
+  <meta property="og:type"        content="website">
+
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="True Nord | Minnesota Fine Art Photography & Prints">
+  <meta name="twitter:description" content="Minnesota landscape, wildlife, and nature photography by TJ Nordberg.">
+  <meta name="twitter:image"       content="https://truenord.photo/assets/og-image.jpg">
+
+  <link rel="preload" href="styles.css" as="style">
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap"
+    as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap">
+  </noscript>
+
+  <style>
+    /* ── LANDING PAGE SPECIFIC ───────────────────────── */
+
+    /* Intro block — photo hero with pan */
+    .landing-intro {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 88px var(--space-lg) 100px;
+      position: relative;
+      overflow: hidden;
+    }
+    /* Duluth bridge background — zoomed in, slow left→right pan */
+    .landing-intro__bg {
+      position: absolute;
+      inset: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+      object-position: center;
+      animation: hero-pan 22s ease-in-out infinite alternate;
+      will-change: transform;
+    }
+    @keyframes hero-pan {
+      from { transform: scale(1.12) translateX(-3%); }
+      to   { transform: scale(1.12) translateX(3%); }
+    }
+    /* Soft global overlay — scrim handles text legibility */
+    .landing-intro__overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom,
+        rgba(0,0,0,0.28) 0%,
+        rgba(0,0,0,0.15) 45%,
+        rgba(0,0,0,0.45) 100%);
+      z-index: 1;
+    }
+    /* Text scrim — frosted dark panel behind copy */
+    .landing-text-scrim {
+      position: relative;
+      z-index: 2;
+      background: rgba(0,0,0,0.44);
+      backdrop-filter: blur(0.5px);
+      -webkit-backdrop-filter: blur(0.5px);
+      border-radius: 6px;
+      padding: 22px 40px 18px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .landing-scroll-hint {
+      position: absolute;
+      bottom: var(--space-xl);
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 4;
+    }
+    .landing-brand {
+      font-family: var(--font-display);
+      font-size: clamp(3rem, 7vw + 1rem, 8rem);
+      font-weight: 700;
+      color: var(--white);
+      letter-spacing: -0.03em;
+      line-height: 1;
+      margin-bottom: var(--space-xs);
+      text-shadow: 0 2px 20px rgba(0,0,0,0.55);
+    }
+    .landing-sub {
+      font-size: var(--text-xs);
+      font-weight: 600;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: var(--accent-light);
+      margin-bottom: var(--space-md);
+    }
+    .landing-tagline {
+      font-size: var(--text-base);
+      color: rgba(255,255,255,0.82);
+      max-width: 380px;
+      line-height: 1.6;
+      margin-bottom: var(--space-lg);
+      text-shadow: 0 1px 8px rgba(0,0,0,0.5);
+    }
+    .landing-links {
+      display: flex;
+      gap: var(--space-xl);
+      align-items: center;
+    }
+    .landing-link {
+      font-size: var(--text-sm);
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.5);
+      border-bottom: 1px solid rgba(255,255,255,0.15);
+      padding-bottom: 2px;
+      transition: color 0.25s, border-color 0.25s;
+    }
+    .landing-link:hover { color: var(--accent-light); border-color: var(--accent); }
+    .landing-link--primary {
+      color: var(--accent-light);
+      border-color: var(--accent);
+    }
+    .landing-link--primary:hover { color: var(--white); border-color: var(--white); }
+    .landing-scroll-hint {
+      position: absolute;
+      bottom: var(--space-2xl);
+      left: 50%;
+      transform: translateX(-50%);
+      color: rgba(255,255,255,0.2);
+      font-size: var(--text-xs);
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: var(--space-xs);
+      animation: nudge 3s ease-in-out infinite;
+    }
+    .landing-scroll-hint::after {
+      content: '';
+      display: block;
+      width: 1px;
+      height: 40px;
+      background: linear-gradient(to bottom, rgba(255,255,255,0.25), transparent);
+    }
+    @keyframes nudge {
+      0%, 100% { transform: translateX(-50%) translateY(0); }
+      50%       { transform: translateX(-50%) translateY(6px); }
+    }
+
+    /* Immersive photo sections */
+    .photo-section {
+      position: relative;
+      height: 58vh;
+      overflow: hidden;
+      background: var(--black-900);
+    }
+    .photo-section__img {
+      position: absolute;
+      inset: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+      object-position: center;
+      transition: transform 8s ease-out;
+      will-change: transform;
+    }
+    /* Ken Burns slow drift on each photo */
+    .photo-section.in-view .photo-section__img {
+      transform: scale(1.04);
+    }
+    /* Subtle vignette — no caption overlay needed */
+    .photo-section::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.08) 0%,
+        rgba(0,0,0,0.0)  50%,
+        rgba(0,0,0,0.18) 100%
+      );
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    /* ── FEATURED SEPARATOR STRIPS ───────────────────── */
+    .feat-sep {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: var(--black-950);
+      padding: 0 var(--space-xl);
+      height: 52px;
+      position: relative;
+    }
+    .feat-sep::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; height: 1px;
+      background: linear-gradient(to right, transparent, rgba(200,121,65,0.4) 30%, rgba(200,121,65,0.4) 70%, transparent);
+    }
+    .feat-sep__left {
+      display: flex;
+      align-items: center;
+      gap: var(--space-lg);
+    }
+    .feat-sep__num {
+      font-size: 0.62rem;
+      letter-spacing: 0.22em;
+      color: rgba(200,121,65,0.55);
+      font-weight: 700;
+    }
+    .feat-sep__title {
+      font-family: var(--font-display);
+      font-size: var(--text-base);
+      color: rgba(255,255,255,0.88);
+      font-style: italic;
+    }
+    .feat-sep__loc {
+      font-size: 0.62rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent-light);
+      font-weight: 600;
+    }
+    .feat-sep__cta {
+      font-size: 0.62rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.32);
+      font-weight: 600;
+      border-bottom: 1px solid rgba(255,255,255,0.12);
+      padding-bottom: 1px;
+      transition: color 0.22s, border-color 0.22s;
+    }
+    .feat-sep__cta:hover { color: var(--accent-light); border-color: var(--accent); }
+    @media (max-width: 600px) {
+      .feat-sep__loc { display: none; }
+      .feat-sep { padding: 0 var(--space-lg); }
+    }
+    /* Placeholder fill when no image loaded */
+    .photo-ph-fill {
+      position: absolute; inset: 0;
+      display: flex; align-items: center; justify-content: center;
+      color: rgba(255,255,255,0.06);
+      font-family: var(--font-display);
+      font-size: clamp(1rem, 2vw, 1.4rem);
+      text-align: center;
+      padding: var(--space-xl);
+      letter-spacing: 0.05em;
+      line-height: 1.6;
+    }
+
+    /* ── LANDING FOOTER CTA ───────────────────────────── */
+    .landing-cta {
+      background: var(--black-950);
+      padding: var(--space-2xl) var(--space-lg);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: var(--space-xl);
+    }
+    .landing-cta-brand {
+      font-family: var(--font-display);
+      font-size: var(--text-2xl);
+      color: var(--white);
+      letter-spacing: -0.01em;
+    }
+    .landing-cta p {
+      color: rgba(255,255,255,0.4);
+      font-size: var(--text-base);
+      max-width: 400px;
+      line-height: 1.7;
+    }
+    .landing-cta-links {
+      display: flex;
+      gap: var(--space-xl);
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "TJ Nordberg",
+    "jobTitle": "Photographer",
+    "url": "https://truenord.photo",
+    "image": "https://truenord.photo/assets/portrait.webp",
+    "description": "Minnesota-based fine art landscape and wildlife photographer. True Nord Photography.",
+    "sameAs": []
+  }
+  </script>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  <!-- NAVIGATION -->
+  <header class="navbar" role="banner">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-brand" aria-label="True Nord — Home">
+        <div class="navbar-wordmark">
+          True Nord
+          <span>Photography</span>
+        </div>
+      </a>
+      <button class="navbar-toggle" aria-expanded="false"
+        aria-controls="navMenu" aria-label="Toggle navigation">
+        <span aria-hidden="true">☰</span>
+      </button>
+      <nav class="navbar-mobile" id="navMenu" aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="prints.html">Prints</a>
+        <a href="about.html">About</a>
+        <a href="index.html#contact" class="btn btn--primary btn--sm">Inquire</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+
+    <!-- ── INTRO ── -->
+    <section class="landing-intro" aria-label="True Nord Photography — Introduction">
+      <img class="landing-intro__bg" src="assets/images/featured/feat-01-duluth-bridge-sunrise.webp" alt="" aria-hidden="true" fetchpriority="high">
+      <div class="landing-intro__overlay" aria-hidden="true"></div>
+      <div class="landing-text-scrim">
+        <p class="landing-sub">TJ Nordberg &nbsp;·&nbsp; Minnesota</p>
+        <h1 class="landing-brand">True Nord</h1>
+        <p class="landing-tagline">Landscapes, wildlife, and the seasons of the north — available as fine art prints.</p>
+        <div class="landing-links">
+          <a href="prints.html" class="landing-link landing-link--primary">Shop Prints</a>
+          <a href="gallery.html" class="landing-link">Full Gallery</a>
+          <a href="about.html" class="landing-link">About</a>
+        </div>
+      </div>
+      <div class="landing-scroll-hint" aria-hidden="true">Scroll</div>
+    </section>
+
+    <!-- ── IMMERSIVE GALLERY ── -->
+
+    <!-- Photo 1 -->
+    <div class="photo-section" role="img" aria-label="Duluth Aerial Lift Bridge at night, black and white">
+      <img class="img-reveal__blur" src="data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAABQBACdASoUAA8APzmGuVOvKSWisAgB4CcJZgCdMoMYPX9AeBCq2ONKx7+AAPGxyBSul7SOjq1/aB9pu4ihqTwg492iyzKo86pdRTmV7vvje08GMKcr04C4+6AAAA==" alt="" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:blur(12px);transform:scale(1.08);transition:opacity 0.4s ease;"><img class="photo-section__img img-reveal__main" src="assets/images/gallery/mn-duluth-bridge-night-bw.webp" srcset="assets/images/thumbs/mn-duluth-bridge-night-bw-thumb.webp 600w, assets/images/gallery/mn-duluth-bridge-night-bw.webp 1200w" sizes="100vw" alt="Duluth Aerial Lift Bridge at night, black and white long exposure" loading="eager">
+    </div>
+    <div class="feat-sep" aria-hidden="true">
+      <div class="feat-sep__left">
+        <span class="feat-sep__num">01</span>
+        <span class="feat-sep__title">Sunrise on the Bay</span>
+        <span class="feat-sep__loc">Duluth, Minnesota</span>
+      </div>
+      <a href="prints.html" class="feat-sep__cta">Order Print →</a>
+    </div>
+
+    <!-- Photo 2 -->
+    <div class="photo-section" role="img" aria-label="Lake Superior cliff at Palisade Head">
+      <img class="img-reveal__blur" src="data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADQAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJZACdEf/gQCy7g9JueAAA94rmdPXUhud/aFJrTmvgetuekxmAOJ/X156lgE3FEE0s367wAAA=" alt="" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:blur(12px);transform:scale(1.08);transition:opacity 0.4s ease;"><img class="photo-section__img img-reveal__main" src="assets/images/featured/feat-02-lake-superior-cliff.webp" srcset="assets/images/gallery/mn-lake-superior-cliff.webp 1200w, assets/images/featured/feat-02-lake-superior-cliff.webp 1920w" sizes="100vw" alt="Palisade Head cliff overlooking Lake Superior, North Shore Minnesota" loading="lazy">
+    </div>
+    <div class="feat-sep" aria-hidden="true">
+      <div class="feat-sep__left">
+        <span class="feat-sep__num">02</span>
+        <span class="feat-sep__title">Edge of the North</span>
+        <span class="feat-sep__loc">Palisade Head, North Shore</span>
+      </div>
+      <a href="prints.html" class="feat-sep__cta">Order Print →</a>
+    </div>
+
+    <!-- Photo 3 -->
+    <div class="photo-section" role="img" aria-label="Aurora borealis over winter camp">
+      <img class="img-reveal__blur" src="data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAQBACdASoUAA0APzmEuVOvKKWisAgB4CcJYgDA3CHgQhSfbIr4R3ISoAD+6MygMxBmuys01e+b1iTBXDZ8G/F+wrfkLi4lyTxWwzaYGD85ZFgdz/GsvZmsAAA=" alt="" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:blur(12px);transform:scale(1.08);transition:opacity 0.4s ease;"><img class="photo-section__img img-reveal__main" src="assets/images/featured/feat-03-aurora-winter-camp.webp" srcset="assets/images/gallery/ns-aurora-winter-camp.webp 1200w, assets/images/featured/feat-03-aurora-winter-camp.webp 1920w" sizes="100vw" alt="Northern lights aurora borealis glowing green over a lit canvas tent in winter forest" loading="lazy">
+    </div>
+    <div class="feat-sep" aria-hidden="true">
+      <div class="feat-sep__left">
+        <span class="feat-sep__num">03</span>
+        <span class="feat-sep__title">Northern Lights</span>
+        <span class="feat-sep__loc">Minnesota North Woods</span>
+      </div>
+      <a href="prints.html" class="feat-sep__cta">Order Print →</a>
+    </div>
+
+    <!-- Photo 4 -->
+    <div class="photo-section" role="img" aria-label="Black Canyon of the Gunnison at sunset">
+      <img class="img-reveal__blur" src="data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADQAwCdASoUAA0APzmGulQvKSWjMAgB4CcJQAXf+A+Fylp4RvBXtQAAyxo5xGlFEhAnhtHb7QWk/kZRJAlwBp56GSLJ4Pcph68JsF5N4vq45j3Tj8eLIrZWUPMWUPDoAAA=" alt="" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:blur(12px);transform:scale(1.08);transition:opacity 0.4s ease;"><img class="photo-section__img img-reveal__main" src="assets/images/featured/feat-04-black-canyon-sunset.webp" srcset="assets/images/gallery/mt-black-canyon-sunset.webp 1200w, assets/images/featured/feat-04-black-canyon-sunset.webp 1920w" sizes="100vw" alt="Black Canyon of the Gunnison deep canyon with river at golden hour sunset" loading="lazy">
+    </div>
+    <div class="feat-sep" aria-hidden="true">
+      <div class="feat-sep__left">
+        <span class="feat-sep__num">04</span>
+        <span class="feat-sep__title">Into the Deep</span>
+        <span class="feat-sep__loc">Black Canyon, Colorado</span>
+      </div>
+      <a href="prints.html" class="feat-sep__cta">Order Print →</a>
+    </div>
+
+    <!-- Photo 5 -->
+    <div class="photo-section" role="img" aria-label="Moose portrait in black and white">
+      <img class="img-reveal__blur" src="data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAABQAwCdASoUAA0APzmGuVOvKSWisAgB4CcJaQAAUkpptSBGQAD+gCfzoA/S5DeoSVBykIvRgM8/2RXIrd4iMkRCsb/9O3TO0sjNr7IAAAA=" alt="" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:blur(12px);transform:scale(1.08);transition:opacity 0.4s ease;"><img class="photo-section__img img-reveal__main" src="assets/images/featured/feat-05-moose-portrait-bw.webp" srcset="assets/images/gallery/wl-moose-portrait-bw.webp 1200w, assets/images/featured/feat-05-moose-portrait-bw.webp 1920w" sizes="100vw" alt="Moose close portrait in black and white, North Woods Minnesota" loading="lazy">
+    </div>
+    <div class="feat-sep" aria-hidden="true">
+      <div class="feat-sep__left">
+        <span class="feat-sep__num">05</span>
+        <span class="feat-sep__title">The Northland's Own</span>
+        <span class="feat-sep__loc">Minnesota North Woods</span>
+      </div>
+      <a href="prints.html" class="feat-sep__cta">Order Print →</a>
+    </div>
+
+    <!-- Photo 6 -->
+    <div class="photo-section" role="img" aria-label="Circular star trails above silhouetted pine trees">
+      <img class="img-reveal__blur" src="data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADwAwCdASoUAA0APzmGulOvKKWisAgB4CcJZQDImBTvY/rFXRgwypwEANxpAlK/ZQCZPQd9mE5N0u7uHRtWNLcWyqCazWKKX6A6FptaNQiPZdTqxcIY5kDQSSWUF4AA" alt="" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:blur(12px);transform:scale(1.08);transition:opacity 0.4s ease;"><img class="photo-section__img img-reveal__main" src="assets/images/featured/feat-06-star-trails-circular.webp" srcset="assets/images/gallery/ns-star-trails-circular.webp 1200w, assets/images/featured/feat-06-star-trails-circular.webp 1920w" sizes="100vw" alt="Circular star trails rotating around Polaris above silhouetted pine forest" loading="lazy">
+    </div>
+    <div class="feat-sep" aria-hidden="true">
+      <div class="feat-sep__left">
+        <span class="feat-sep__num">06</span>
+        <span class="feat-sep__title">All Night Long</span>
+        <span class="feat-sep__loc">Dark Sky, Minnesota</span>
+      </div>
+      <a href="prints.html" class="feat-sep__cta">Order Print →</a>
+    </div>
+
+    <!-- ── LANDING FOOTER CTA ── -->
+    <div class="landing-cta">
+      <div class="landing-cta-brand">True Nord</div>
+      <p>Fine art prints of Minnesota landscapes, wildlife, and seasons — signed by TJ Nordberg and shipped from Minnesota.</p>
+      <div class="landing-cta-links">
+        <a href="prints.html" class="btn btn--primary">Shop Prints</a>
+        <a href="gallery.html" class="btn btn--outline">Full Gallery</a>
+      </div>
+    </div>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section--alt" aria-labelledby="contact-heading">
+      <div class="section-inner section-inner--narrow">
+        <p class="section-eyebrow">Get in Touch</p>
+        <h2 id="contact-heading">Inquire About Prints</h2>
+        <p class="section-intro">Questions about a print, custom sizing, or licensing? Reach out — TJ responds personally.</p>
+        <form id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required autocomplete="name" placeholder="Your name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required autocomplete="email" placeholder="you@email.com">
+          </div>
+          <div class="form-group">
+            <label for="interest">I'm interested in</label>
+            <select id="interest" name="interest">
+              <option value="">Select one...</option>
+              <option value="print">A specific print</option>
+              <option value="custom">Custom size or framing</option>
+              <option value="licensing">Commercial licensing</option>
+              <option value="commission">Custom commission</option>
+              <option value="other">Something else</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Tell me about what you're looking for..."></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- LIGHTBOX (for future use) -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Photo lightbox" tabindex="-1">
+    <button id="lb-close" class="lightbox-close" aria-label="Close lightbox">✕</button>
+    <button id="lb-prev" class="lightbox-nav lightbox-prev" aria-label="Previous photo">‹</button>
+    <button id="lb-next" class="lightbox-nav lightbox-next" aria-label="Next photo">›</button>
+    <div class="lightbox-inner">
+      <img id="lb-img" class="lightbox-img" src="" alt="">
+      <p id="lb-caption" class="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-wordmark">True Nord</div>
+        <div class="footer-tagline">Photography</div>
+        <p>Minnesota landscape, wildlife, and nature photography. Fine art prints — signed and shipped from Minnesota.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <h4>Explore</h4>
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="prints.html">Prints</a>
+        <a href="about.html">About</a>
+      </nav>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>Minnesota</p>
+        <p><a href="mailto:tj@truenord.photo">tj@truenord.photo</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="footer-year"></span> True Nord. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+  <script>
+    /* Ken Burns — trigger on scroll into view */
+    if ('IntersectionObserver' in window) {
+      var ps = new IntersectionObserver(function(entries) {
+        entries.forEach(function(e) {
+          e.target.classList.toggle('in-view', e.isIntersecting)
+        })
+      }, { threshold: 0.15 })
+      document.querySelectorAll('.photo-section').forEach(function(el) { ps.observe(el) })
+    }
+  </script>
+
+  <a href="#" class="back-to-top" aria-label="Back to top">↑ Top</a>
+
+</body>
+</html>

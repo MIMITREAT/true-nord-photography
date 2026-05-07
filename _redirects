@@ -1,0 +1,4 @@
+# Cloudflare Pages redirects
+/home        /index.html   301
+/shop        /prints.html  301
+/portfolio   /gallery.html 301

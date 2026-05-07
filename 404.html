@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found | True Nord</title>
+  <link rel="preload" href="styles.css" as="style">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
+    as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap">
+  </noscript>
+  <style>
+    .error-page {
+      min-height: 100vh;
+      display: flex; align-items: center; justify-content: center;
+      background: var(--black-900);
+      text-align: center;
+      padding: var(--space-xl);
+    }
+    .error-code {
+      font-size: clamp(6rem, 20vw, 14rem);
+      font-weight: 900;
+      color: rgba(200,121,65,0.15);
+      line-height: 1;
+      margin-bottom: var(--space-lg);
+    }
+    .error-page h1 {
+      font-family: var(--font-display);
+      color: var(--white);
+      font-size: var(--text-3xl);
+      margin-bottom: var(--space-md);
+    }
+    .error-page p {
+      color: rgba(255,255,255,0.55);
+      font-size: var(--text-lg);
+      max-width: 400px;
+      margin: 0 auto var(--space-xl);
+    }
+  </style>
+</head>
+<body>
+  <div class="error-page">
+    <div>
+      <div class="error-code">404</div>
+      <h1>Lost in the North Woods</h1>
+      <p>That page doesn't exist — but there's plenty to explore from here.</p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+        <a href="index.html" class="btn btn--primary">Go Home</a>
+        <a href="gallery.html" class="btn btn--outline" style="border-color:rgba(255,255,255,0.4);color:#fff">View Gallery</a>
+      </div>
+    </div>
+  </div>
+  <script src="script.js" defer></script>
+</body>
+</html>

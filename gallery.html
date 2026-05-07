@@ -1,0 +1,559 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="True Nord gallery — Minnesota landscapes, North Shore, Boundary Waters, wildlife, and seasons. Fine art prints available.">
+  <meta name="theme-color" content="#c87941">
+  <title>Gallery | True Nord — Minnesota</title>
+  <link rel="canonical" href="https://truenord.photo/gallery.html">
+
+  <meta property="og:title"       content="Gallery | True Nord">
+  <meta property="og:description" content="Minnesota landscapes, North Shore, Boundary Waters, wildlife, and seasons.">
+  <meta property="og:image"       content="https://truenord.photo/assets/og-image.jpg">
+  <meta property="og:url"         content="https://truenord.photo/gallery.html">
+
+  <link rel="preload" href="styles.css" as="style">
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+    as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap">
+  </noscript>
+
+  <style>
+    /* Gallery page hero — compact */
+    .gallery-page-hero {
+      background: var(--black-900);
+      padding: 100px var(--space-lg) var(--space-xl);
+      text-align: center;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .gallery-page-hero h1 {
+      font-family: var(--font-display);
+      color: var(--white);
+      font-size: var(--text-4xl);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: var(--space-sm);
+    }
+    .gallery-page-hero p {
+      color: rgba(255,255,255,0.65);
+      font-size: var(--text-lg);
+      max-width: 520px;
+      margin: 0 auto;
+    }
+    /* Masonry placeholder images */
+    .ph-img {
+      width: 100%;
+      display: block;
+      background: var(--black-800);
+      position: relative;
+      overflow: hidden;
+    }
+    .ph-img-label {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255,255,255,0.1);
+      font-family: Georgia, serif;
+      font-size: 0.8rem;
+      text-align: center;
+      padding: 1rem;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  <header class="navbar" role="banner">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-brand" aria-label="True Nord — Home">
+        <div class="navbar-wordmark">
+          True Nord
+          <span>Photography</span>
+        </div>
+      </a>
+      <button class="navbar-toggle" aria-expanded="false"
+        aria-controls="navMenu" aria-label="Toggle navigation">
+        <span aria-hidden="true">☰</span>
+      </button>
+      <nav class="navbar-mobile" id="navMenu" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="gallery.html" aria-current="page">Gallery</a>
+        <a href="prints.html">Prints</a>
+        <a href="about.html">About</a>
+        <a href="index.html#contact" class="btn btn--primary btn--sm">Inquire</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+
+    <div class="gallery-page-hero">
+      <p class="section-eyebrow" style="margin-bottom:var(--space-md)">Portfolio</p>
+      <h1>The Gallery</h1>
+      <p>Minnesota landscapes, wildlife, and seasons — browse by collection or view everything at once.</p>
+    </div>
+
+    <section class="section section--dark" aria-label="Photo gallery">
+      <div class="section-inner">
+
+        <!-- FILTER TABS -->
+        <div class="gallery-filter" role="group" aria-label="Filter by collection">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="minnesota">Minnesota</button>
+          <button class="filter-btn" data-filter="wildlife">Wildlife</button>
+          <button class="filter-btn" data-filter="night-sky">Night Sky</button>
+          <button class="filter-btn" data-filter="mountains">Mountains</button>
+          <button class="filter-btn" data-filter="ski-resort">Ski &amp; Snow</button>
+          <button class="filter-btn" data-filter="travel">Travel</button>
+          <button class="filter-btn" data-filter="people">People</button>
+        </div>
+
+        <div class="gallery-masonry">
+
+          <!-- MINNESOTA -->
+          <div class="gallery-item" data-lightbox data-category="minnesota"
+            data-src="assets/images/gallery/mn-duluth-bridge-sunrise.webp"
+            data-caption="Sunrise on the Bay — Duluth Aerial Lift Bridge, Minnesota"
+            tabindex="0" role="button" aria-label="Open: Duluth Bridge Sunrise">
+            <div class="img-reveal" style="width:100%;height:100%;"><img class="img-reveal__blur" src="data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAABQBACdASoUAA8APzmGuVOvKSWisAgB4CcJZgCdMoMYPX9AeBCq2ONKx7+AAPGxyBSul7SOjq1/aB9pu4ihqTwg492iyzKo86pdRTmV7vvje08GMKcr04C4+6AAAA==" alt="" aria-hidden="true"><img class="img-reveal__main" src="assets/images/thumbs/mn-duluth-bridge-sunrise-thumb.webp" srcset="assets/images/thumbs/mn-duluth-bridge-sunrise-thumb.webp 600w, assets/images/gallery/mn-duluth-bridge-sunrise.webp 1200w" sizes="(max-width:600px) 100vw, (max-width:900px) 50vw, 33vw" alt="Duluth Aerial Lift Bridge at sunrise over Lake Superior" loading="lazy"></div>
+            <svg class="gallery-zoom-icon" aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+          </div>
+
+          <div class="gallery-item" data-lightbox data-category="minnesota"
+            data-src="assets/images/gallery/mn-lake-superior-cliff.webp"
+            data-caption="Edge of the North — Palisade Head, Lake Superior"
+            tabindex="0" role="button" aria-label="Open: Palisade Head">
+            <div class="img-reveal" style="width:100%;height:100%;"><img class="img-reveal__blur" src="data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADQAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJZACdEf/gQCy7g9JueAAA94rmdPXUhud/aFJrTmvgetuekxmAOJ/X156lgE3FEE0s367wAAA=" alt="" aria-hidden="true"><img class="img-reveal__main" src="assets/images/thumbs/mn-lake-superior-cliff-thumb.webp" srcset="assets/images/thumbs/mn-lake-superior-cliff-thumb.webp 600w, assets/images/gallery/mn-lake-superior-cliff.webp 1200w" sizes="(max-width:600px) 100vw, (max-width:900px) 50vw, 33vw" alt="Palisade Head cliff overlooking Lake Superior" loading="lazy"></div>
+            <svg class="gallery-zoom-icon" aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+          </div>
+
+          <div class="gallery-item" data-lightbox data-category="minnesota"
+            data-src="assets/images/gallery/mn-duluth-bridge-night-bw.webp"
+            data-caption="Steel &amp; Light — Duluth Aerial Lift Bridge at Night"
+            tabindex="0" role="button" aria-label="Open: Duluth Bridge Night B&W">
+            <div class="img-reveal" style="width:100%;height:100%;"><img class="img-reveal__blur" src="data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAACQAwCdASoUAAwAPzmGuVOvKSWisAgB4CcJaQAANkelGwAY3UgAAP7CPvAIksCefwP06MK8UpCKsIF6q8/x7FnSCDWpgm9iKJQtdssbc6Y52+vcFxAAAA==" alt="" aria-hidden="true"><img class="img-reveal__main" src="assets/images/thumbs/mn-duluth-bridge-night-bw-thumb.webp" srcset="assets/images/thumbs/mn-duluth-bridge-night-bw-thumb.webp 600w, assets/images/gallery/mn-duluth-bridge-night-bw.webp 1200w" sizes="(max-width:600px) 100vw, (max-width:900px) 50vw, 33vw" alt="Duluth Aerial Lift Bridge at night, black and white" loading="lazy"></div>
+            <svg class="gallery-zoom-icon" aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+          </div>
+
+          <div class="gallery-item" data-lightbox data-category="minnesota"
+            data-src="assets/images/gallery/mn-duluth-harbor-sunset.webp"
+            data-caption="Harbor Sunset — Duluth, Minnesota"
+            tabindex="0" role="button" aria-label="Open: Duluth Harbor Sunset">
+            <div class="img-reveal" style="width:100%;height:100%;"><img class="img-reveal__blur" src="data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAABQAwCdASoUAAsAPzmGulOvKKWisAgB4CcJQAAI/Xqj+YEKkADMfd70t5j/NaCzxxuDezHYG4bLiUzZjoqEFm4GcgVIFYJ8G+7g+Z0VcKUqRAReuAUJuA1AAAA=" alt="" aria-hidden="true"><img class="img-reveal__main" src="assets/images/thumbs/mn-duluth-harbor-sunset-thumb.webp" srcset="assets/images/thumbs/mn-duluth-harbor-sunset-thumb.webp 600w, assets/images/gallery/mn-duluth-harbor-sunset.webp 1200w" sizes="(max-width:600px) 100vw, (max-width:900px) 50vw, 33vw" alt="Duluth harbor at sunset with lighthouse pier" loading="lazy"></div>
+            <svg class="gallery-zoom-icon" aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+          </div>
+
+          <div class="gallery-item" data-lightbox data-category="minnesota"
+            data-src="assets/images/gallery/mn-north-woods-autumn-road.webp"
+            data-caption="North Woods Autumn — Minnesota"
+            tabindex="0" role="button" aria-label="Open: North Woods Autumn Road">
+            <div class="img-reveal" style="width:100%;height:100%;"><img class="img-reveal__blur" src="data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAACQAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJZACsABkjB7ElaZGQAPDpqrYkxgKlvCRSC99CMNhyrHN4OKQZH3g+aQcOSB3zyAGXIAlRrEAAAA==" alt="" aria-hidden="true"><img class="img-reveal__main" src="assets/images/thumbs/mn-north-woods-autumn-road-thumb.webp" srcset="assets/images/thumbs/mn-north-woods-autumn-road-thumb.webp 600w, assets/images/gallery/mn-north-woods-autumn-road.webp 1200w" sizes="(max-width:600px) 100vw, (max-width:900px) 50vw, 33vw" alt="Autumn birch and maple forest road, Minnesota North Woods" loading="lazy"></div>
+            <svg class="gallery-zoom-icon" aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+          </div>
+
+          <div class="gallery-item" data-lightbox data-category="minnesota"
+            data-src="assets/images/gallery/mn-winter-birch-sunlight.webp"
+            data-caption="Winter Birch — Minnesota"
+            tabindex="0" role="button" aria-label="Open: Winter Birch Sunlight">
+            <div class="img-reveal" style="width:100%;height:100%;"><img class="img-reveal__blur" src="data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAABwAwCdASoUAA0APzmIulQvKSWjMAgB4CcJZwDE2A/tJS/YMwAAzYuvqVOMrroPhxE9YrWlHoulUFlQB+cHSVchao0A0QWgAAA=" alt="" aria-hidden="true"><img class="img-reveal__main" src="assets/images/thumbs/mn-winter-birch-sunlight-thumb.webp" srcset="assets/images/thumbs/mn-winter-birch-sunlight-thumb.webp 600w, assets/images/gallery/mn-winter-birch-sunlight.webp 1200w" sizes="(max-width:600px) 100vw, (max-width:900px) 50vw, 33vw" alt="Snow-covered birch trees with winter sunlight filtering through" loading="lazy"></div>
+            <svg class="gallery-zoom-icon" aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+          </div>
+
+          <div class="gallery-item" data-lightbox data-category="minnesota"
+            data-src="assets/images/gallery/mn-lake-sunset-reflection.webp"
+            data-caption="Last Light — Minnesota Lake"
+            tabindex="0" role="button" aria-label="Open: Minnesota Lake Sunset Reflection">
+            <div class="img-reveal" style="width:100%;height:100%;"><img class="img-reveal__blur" src="data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAQBACdASoUAAsAPzmIulQvKSWjMAgB4CcJZACdIJrJ/gOqXIRrTchaMAD+z9Mk+0M0LKEtyO5bUYiktTlWRGA44gZJgkwr9EnpMqToGpCox22CcnNMVuhFh/OwAAAA" alt="" aria-hidden="true"><img class="img-reveal__main" src="assets/images/thumbs/mn-lake-sunset-reflection-thumb.webp" srcset="assets/images/thumbs/mn-lake-sunset-reflection-thumb.webp 600w, assets/images/gallery/mn-lake-sunset-reflection.webp 1200w" sizes="(max-width:600px) 100vw, (max-width:900px) 50vw, 33vw" alt="Minnesota lake at sunset with dramatic orange and blue sky reflection" loading="lazy"></div>
+            <svg class="gallery-zoom-icon" aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+          </div>
+
+          <div class="gallery-item" data-lightbox data-category="minnesota"
+            data-src="assets/images/gallery/mn-lake-superior-ripples.webp"
+            data-caption="Still Water — Lake Superior"
+            tabindex="0" role="button" aria-label="Open: Lake Superior Ripples Abstract">
+            <div class="img-reveal" style="width:100%;height:100%;"><img class="img-reveal__blur" src="data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADQAwCdASoUABEAPzmQu1UvKqYjMBgIAeAnCUAXYAHm3ktJBdz2IpgAzTNwPuoiWfOup18YK61W85eByR4hOIP0ohazfHoHoRHoUtJZgAA=" alt="" aria-hidden="true"><img class="img-reveal__main" src="assets/images/thumbs/mn-lake-superior-ripples-thumb.webp" srcset="assets/images/thumbs/mn-lake-superior-ripples-thumb.webp 600w, assets/images/gallery/mn-lake-superior-ripples.webp 1200w" sizes="(max-width:600px) 100vw, (max-width:900px) 50vw, 33vw" alt="Abstract smooth water ripples on Lake Superior, deep blue" loading="lazy"></div>
+            <svg class="gallery-zoom-icon" aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+          </div>
+
+          <div class="gallery-item" data-lightbox data-category="minnesota"
+            data-src="assets/images/gallery/mn-pond-reflection-autumn.webp"
+            data-caption="Autumn Pond — Minnesota"
+            tabindex="0" role="button" aria-label="Open: Pond Reflection Autumn">
+            <div class="img-reveal" style="width:100%;height:100%;"><img class="img-reveal__blur" src="data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADwAwCdASoUAA0APzmIulQvKSWjMAgB4CcJQBOmRuATWAEfqL0MbX4AAP1CcA6XFKy1+NNJSMg5tGRsX2SpDUT2VAJHU3dO60AAAA==" alt="" aria-hidden="true"><img class="img-reveal__main" src="assets/images/thumbs/mn-pond-reflection-autumn-thumb.webp" srcset="assets/images/thumbs/mn-pond-reflection-autumn-thumb.webp 600w, assets/images/gallery/mn-pond-reflection-autumn.webp 1200w" sizes="(max-width:600px) 100vw, (max-width:900px) 50vw, 33vw" alt="Cottonwood trees reflected in autumn pond under dramatic clouds" loading="lazy"></div>
+            <svg class="gallery-zoom-icon" aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+          </div>
+
+          <!-- WILDLIFE -->
+          <div class="gallery-item" data-lightbox data-category="wildlife"
+            data-src="assets/images/gallery/wl-moose-portrait-bw.webp"
+            data-caption="The Northland's Own — Moose Portrait"
+            tabindex="0" role="button" aria-label="Open: Moose Portrait B&W">
+            <div class="img-reveal" style="width:100%;height:100%;"><img class="img-reveal__blur" src="data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAABQAwCdASoUAA0APzmGuVOvKSWisAgB4CcJaQAAUkpptSBGQAD+gCfzoA/S5DeoSVBykIvRgM8/2RXIrd4iMkRCsb/9O3TO0sjNr7IAAAA=" alt="" aria-hidden="true"><img class="img-reveal__main" src="assets/images/thumbs/wl-moose-portrait-bw-thumb.webp" srcset="assets/images/thumbs/wl-moose-portrait-bw-thumb.webp 600w, assets/images/gallery/wl-moose-portrait-bw.webp 1200w" sizes="(max-width:600px) 100vw, (max-width:900px) 50vw, 33vw" alt="Moose close portrait in black and white, North Woods" loading="lazy"></div>
+            <svg class="gallery-zoom-icon" aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+          </div>
+
+          <div class="gallery-item" data-lightbox data-category="wildlife"
+            data-src="assets/images/gallery/wl-whitetail-buck-autumn.webp"
+            data-caption="In the Brush — Whitetail Buck"
+            tabindex="0" role="button" aria-label="Open: Whitetail Buck Autumn">
+            <div class="img-reveal" style="width:100%;height:100%;"><img class="img-reveal__blur" src="data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAACQAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJQBOgAsgRG5We0KgAAP5xeE6MOAA5pTcWifbNGWvkk7KssAG/Hi/i5V2ih1rSNaAAAA==" alt="" aria-hidden="true"><img class="img-reveal__main" src="assets/images/thumbs/wl-whitetail-buck-autumn-thumb.webp" srcset="assets/images/thumbs/wl-whitetail-buck-autumn-thumb.webp 600w, assets/images/gallery/wl-whitetail-buck-autumn.webp 1200w" sizes="(max-width:600px) 100vw, (max-width:900px) 50vw, 33vw" alt="Whitetail buck deer standing in golden autumn brush" loading="lazy"></div>
+            <svg class="gallery-zoom-icon" aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+          </div>
+
+          <div class="gallery-item" data-lightbox data-category="wildlife"
+            data-src="assets/images/gallery/wl-red-squirrel-pine.webp"
+            data-caption="Red Squirrel — Pine Branch"
+            tabindex="0" role="button" aria-label="Open: Red Squirrel Pine Branch">
+            <div class="img-reveal" style="width:100%;height:100%;"><img class="img-reveal__blur" src="data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAAAwBACdASoUAA8APzmEuVOvKKWisAgB4CcJbACdMoGv/gODPmClZiEqVeAA3v9nJ6swXMxVi3YcWqchxS6iY3VLEr5SMF99oRkVfpQGIrg5hYM9D7sUxt408zDZBwZYuMT2JTZR0mTUmKyekxVfN/XOMLQAAA==" alt="" aria-hidden="true"><img class="img-reveal__main" src="assets/images/thumbs/wl-red-squirrel-pine-thumb.webp" srcset="assets/images/thumbs/wl-red-squirrel-pine-thumb.webp 600w, assets/images/gallery/wl-red-squirrel-pine.webp 1200w" sizes="(max-width:600px) 100vw, (max-width:900px) 50vw, 33vw" alt="Red squirrel eating on a pine branch, green bokeh background" loading="lazy"></div>
+            <svg class="gallery-zoom-icon" aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+          </div>
+
+          <div class="gallery-item" data-lightbox data-category="wildlife"
+            data-src="assets/images/gallery/wl-mallard-duck-reeds.webp"
+            data-caption="Mallard — Summer Reeds"
+            tabindex="0" role="button" aria-label="Open: Mallard Duck Reeds">
+            <div class="img-reveal" style="width:100%;height:100%;"><img class="img-reveal__blur" src="data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAABQAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJZQDA3BSDG86cAAD+g433bijNGwqkuzTUmTB6Oaf+abKR6AsfzlDa5dEyn5LkAAA=" alt="" aria-hidden="true"><img class="img-reveal__main" src="assets/images/thumbs/wl-mallard-duck-reeds-thumb.webp" srcset="assets/images/thumbs/wl-mallard-duck-reeds-thumb.webp 600w, assets/images/gallery/wl-mallard-duck-reeds.webp 1200w" sizes="(max-width:600px) 100vw, (max-width:900px) 50vw, 33vw" alt="Mallard duck swimming among summer reeds" loading="lazy"></div>
+            <svg class="gallery-zoom-icon" aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+          </div>
+
+          <div class="gallery-item" data-lightbox data-category="wildlife"
+            data-src="assets/images/gallery/wl-canada-geese-in-flight.webp"
+            data-caption="Liftoff — Canada Geese"
+            tabindex="0" role="button" aria-label="Open: Canada Geese in Flight">
+            <div class="img-reveal" style="width:100%;height:100%;"><img class="img-reveal__blur" src="data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADQAwCdASoUAA0APzmEuVOvKKWisAgB4CcJZQDDNCHHD3Di9+hA3gAA/iWyWY8T+dcgIGwudxqTzw2tUwREZVQQ8oNLJD5hHzxP9MPuv19V8nDuDhH8dEgAAAA=" alt="" aria-hidden="true"><img class="img-reveal__main" src="assets/images/thumbs/wl-canada-geese-in-flight-thumb.webp" srcset="assets/images/thumbs/wl-canada-geese-in-flight-thumb.webp 600w, assets/images/gallery/wl-canada-geese-in-flight.webp 1200w" sizes="(max-width:600px) 100vw, (max-width:900px) 50vw, 33vw" alt="Canada geese taking flight from a lake at dusk" loading="lazy"></div>
+            <svg class="gallery-zoom-icon" aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+          </div>
+
+          <div class="gallery-item" data-lightbox data-category="wildlife"
+            data-src="assets/images/gallery/wl-prairie-dogs-burrow.webp"
+            data-caption="Prairie Dogs — Colorado"
+            tabindex="0" role="button" aria-label="Open: Prairie Dogs Burrow">
+            <div class="img-reveal" style="width:100%;height:100%;"><img class="img-reveal__blur" src="data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAADQAwCdASoUAA8APzmEuVOvKKWisAgB4CcJaACdMoADYV7r1Z706ugA/SI8grR1WyAZwDor/gxmmVrzqm87lcI4qF9SJ0sDgRAe1XhjPRoS8b1k3rJgY/Ng++FTlJVWyx0p6EOAAAA=" alt="" aria-hidden="true"><img class="img-reveal__main" src="assets/images/thumbs/wl-prairie-dogs-burrow-thumb.webp" srcset="assets/images/thumbs/wl-prairie-dogs-burrow-thumb.webp 600w, assets/images/gallery/wl-prairie-dogs-burrow.webp 1200w" sizes="(max-width:600px) 100vw, (max-width:900px) 50vw, 33vw" alt="Three prairie dogs emerging from their burrow" loading="lazy"></div>
+            <svg class="gallery-zoom-icon" aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+          </div>
+
+          <div class="gallery-item" data-lightbox data-category="wildlife"
+            data-src="assets/images/gallery/wl-leopard-close-up.webp"
+            data-caption="Through the Fence — Leopard"
+            tabindex="0" role="button" aria-label="Open: Leopard Close Up">
+            <div class="img-reveal" style="width:100%;height:100%;"><img class="img-reveal__blur" src="data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAAAQBACdASoUAA8APzmEuVOvKKWisAgB4CcJbACdMoABq9/FJvjr7UzN4AD+autWuA4YxKxPGiiCu7viZXIcJX8jbyyR5sJZsTdT1n7Kq00Qflhzx7ojRnl1CcF/kFBjuj2JtU2S1XphbJMxlcZqY0AartpDwoX9yPXnvXICQEwULwAA" alt="" aria-hidden="true"><img class="img-reveal__main" src="assets/images/thumbs/wl-leopard-close-up-thumb.webp" srcset="assets/images/thumbs/wl-leopard-close-up-thumb.webp 600w, assets/images/gallery/wl-leopard-close-up.webp 1200w" sizes="(max-width:600px) 100vw, (max-width:900px) 50vw, 33vw" alt="Leopard close up portrait through chain-link fence" loading="lazy"></div>
+            <svg class="gallery-zoom-icon" aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+          </div>
+
+          <div class="gallery-item" data-lightbox data-category="wildlife"
+            data-src="assets/images/gallery/wl-sea-dragon-aquarium.webp"
+            data-caption="Leafy Sea Dragon — Aquarium"
+            tabindex="0" role="button" aria-label="Open: Leafy Sea Dragon">
+            <div class="img-reveal" style="width:100%;height:100%;"><img class="img-reveal__blur" src="data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAwBACdASoUAA8APzmIvlSvKSajMAgB4CcJZgDKACHgEBoBJGuXkYNGIQAA/uvQTSkXa7iMkox9WvrWl9ThtijJfox7ZxqUShqlmSpciPHv7XCc3XnATf3Mw2r1IgPmIAA=" alt="" aria-hidden="true"><img class="img-reveal__main" src="assets/images/thumbs/wl-sea-dragon-aquarium-thumb.webp" srcset="assets/images/thumbs/wl-sea-dragon-aquarium-thumb.webp 600w, assets/images/gallery/wl-sea-dragon-aquarium.webp 1200w" sizes="(max-width:600px) 100vw, (max-width:900px) 50vw, 33vw" alt="Leafy sea dragon against black background, vibrant blue and orange" loading="lazy"></div>
+            <svg class="gallery-zoom-icon" aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+          </div>
+
+          <!-- NIGHT SKY -->
+          <div class="gallery-item" data-lightbox data-category="night-sky"
+            data-src="assets/images/gallery/ns-aurora-winter-camp.webp"
+            data-caption="Northern Lights — Minnesota North Woods"
+            tabindex="0" role="button" aria-label="Open: Aurora Borealis Winter Camp">
+            <div class="img-reveal" style="width:100%;height:100%;"><img class="img-reveal__blur" src="data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAQBACdASoUAA0APzmEuVOvKKWisAgB4CcJYgDA3CHgQhSfbIr4R3ISoAD+6MygMxBmuys01e+b1iTBXDZ8G/F+wrfkLi4lyTxWwzaYGD85ZFgdz/GsvZmsAAA=" alt="" aria-hidden="true"><img class="img-reveal__main" src="assets/images/thumbs/ns-aurora-winter-camp-thumb.webp" srcset="assets/images/thumbs/ns-aurora-winter-camp-thumb.webp 600w, assets/images/gallery/ns-aurora-winter-camp.webp 1200w" sizes="(max-width:600px) 100vw, (max-width:900px) 50vw, 33vw" alt="Aurora borealis glowing green over a lit canvas tent in winter forest" loading="lazy"></div>
+            <svg class="gallery-zoom-icon" aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+          </div>
+
+          <div class="gallery-item" data-lightbox data-category="night-sky"
+            data-src="assets/images/gallery/ns-star-trails-circular.webp"
+            data-caption="All Night Long — Circular Star Trails"
+            tabindex="0" role="button" aria-label="Open: Star Trails Circular">
+            <div class="img-reveal" style="width:100%;height:100%;"><img class="img-reveal__blur" src="data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADwAwCdASoUAA0APzmGulOvKKWisAgB4CcJZQDImBTvY/rFXRgwypwEANxpAlK/ZQCZPQd9mE5N0u7uHRtWNLcWyqCazWKKX6A6FptaNQiPZdTqxcIY5kDQSSWUF4AA" alt="" aria-hidden="true"><img class="img-reveal__main" src="assets/images/thumbs/ns-star-trails-circular-thumb.webp" srcset="assets/images/thumbs/ns-star-trails-circular-thumb.webp 600w, assets/images/gallery/ns-star-trails-circular.webp 1200w" sizes="(max-width:600px) 100vw, (max-width:900px) 50vw, 33vw" alt="Circular star trails rotating around Polaris above silhouetted pines" loading="lazy"></div>
+            <svg class="gallery-zoom-icon" aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+          </div>
+
+          <div class="gallery-item" data-lightbox data-category="night-sky"
+            data-src="assets/images/gallery/ns-star-trails-mountain.webp"
+            data-caption="Star Trails — Mountain Valley"
+            tabindex="0" role="button" aria-label="Open: Star Trails Mountain Valley">
+            <div class="img-reveal" style="width:100%;height:100%;"><img class="img-reveal__blur" src="data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAADQAwCdASoUAA0APzmIulQvKSWjMAgB4CcJZwDCgCHfv+mZ91eXAAAA/ssxwuzFRkKKgv7PsU/HUzTEB5LWsugA" alt="" aria-hidden="true"><img class="img-reveal__main" src="assets/images/thumbs/ns-star-trails-mountain-thumb.webp" srcset="assets/images/thumbs/ns-star-trails-mountain-thumb.webp 600w, assets/images/gallery/ns-star-trails-mountain.webp 1200w" sizes="(max-width:600px) 100vw, (max-width:900px) 50vw, 33vw" alt="Star trails streaking across the sky above a mountain valley" loading="lazy"></div>
+            <svg class="gallery-zoom-icon" aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+          </div>
+
+          <div class="gallery-item" data-lightbox data-category="night-sky"
+            data-src="assets/images/gallery/ns-lake-superior-night.webp"
+            data-caption="Lake Superior by Night — North Shore"
+            tabindex="0" role="button" aria-label="Open: Lake Superior Night Stars">
+            <div class="img-reveal" style="width:100%;height:100%;"><img class="img-reveal__blur" src="data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADQAwCdASoUAA0APzmGuVOvKSWisAgB4CcJQBWABDd1Ld/cz+bdvAAA/rj9ms9CL4Y2a39+/CnY0GSbht2+VsLL5H3tNbODAfmkpInsgWMeAAAA" alt="" aria-hidden="true"><img class="img-reveal__main" src="assets/images/thumbs/ns-lake-superior-night-thumb.webp" srcset="assets/images/thumbs/ns-lake-superior-night-thumb.webp 600w, assets/images/gallery/ns-lake-superior-night.webp 1200w" sizes="(max-width:600px) 100vw, (max-width:900px) 50vw, 33vw" alt="Lake Superior shoreline at night with stars and rocky cliff" loading="lazy"></div>
+            <svg class="gallery-zoom-icon" aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+          </div>
+
+          <div class="gallery-item" data-lightbox data-category="night-sky"
+            data-src="assets/images/gallery/ns-fireworks-long-exposure.webp"
+            data-caption="Burst — Fireworks Long Exposure"
+            tabindex="0" role="button" aria-label="Open: Fireworks Long Exposure">
+            <div class="img-reveal" style="width:100%;height:100%;"><img class="img-reveal__blur" src="data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAACwAgCdASoUAAsAPzmGulQvKSWjMAgB4CcJZwAAeyAA/u8Osu6nRfpaBi1qSsVMAAA=" alt="" aria-hidden="true"><img class="img-reveal__main" src="assets/images/thumbs/ns-fireworks-long-exposure-thumb.webp" srcset="assets/images/thumbs/ns-fireworks-long-exposure-thumb.webp 600w, assets/images/gallery/ns-fireworks-long-exposure.webp 1200w" sizes="(max-width:600px) 100vw, (max-width:900px) 50vw, 33vw" alt="Single firework burst long exposure, blue and gold trails on black" loading="lazy"></div>
+            <svg class="gallery-zoom-icon" aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+          </div>
+
+          <!-- MOUNTAINS -->
+          <div class="gallery-item" data-lightbox data-category="mountains"
+            data-src="assets/images/gallery/mt-black-canyon-sunset.webp"
+            data-caption="Into the Deep — Black Canyon of the Gunnison"
+            tabindex="0" role="button" aria-label="Open: Black Canyon Sunset">
+            <div class="img-reveal" style="width:100%;height:100%;"><img class="img-reveal__blur" src="data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADQAwCdASoUAA0APzmGulQvKSWjMAgB4CcJQAXf+A+Fylp4RvBXtQAAyxo5xGlFEhAnhtHb7QWk/kZRJAlwBp56GSLJ4Pcph68JsF5N4vq45j3Tj8eLIrZWUPMWUPDoAAA=" alt="" aria-hidden="true"><img class="img-reveal__main" src="assets/images/thumbs/mt-black-canyon-sunset-thumb.webp" srcset="assets/images/thumbs/mt-black-canyon-sunset-thumb.webp 600w, assets/images/gallery/mt-black-canyon-sunset.webp 1200w" sizes="(max-width:600px) 100vw, (max-width:900px) 50vw, 33vw" alt="Black Canyon of the Gunnison deep canyon at golden hour" loading="lazy"></div>
+            <svg class="gallery-zoom-icon" aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+          </div>
+
+          <div class="gallery-item" data-lightbox data-category="mountains"
+            data-src="assets/images/gallery/mt-colorado-alpine-valley.webp"
+            data-caption="Alpine Valley — Rocky Mountain National Park"
+            tabindex="0" role="button" aria-label="Open: Colorado Alpine Valley">
+            <div class="img-reveal" style="width:100%;height:100%;"><img class="img-reveal__blur" src="data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAAAQBACdASoUAAsAPzmGuVOvKSWisAgB4CcJZgC7ACKbOnJLwlWHmcVYAAD8i2prdqHjCB81LRvPetMulGw7w+ECsM9+xWD5a93Wqjw6Idh+dMv3NolL3lRQxxHOdcAA" alt="" aria-hidden="true"><img class="img-reveal__main" src="assets/images/thumbs/mt-colorado-alpine-valley-thumb.webp" srcset="assets/images/thumbs/mt-colorado-alpine-valley-thumb.webp 600w, assets/images/gallery/mt-colorado-alpine-valley.webp 1200w" sizes="(max-width:600px) 100vw, (max-width:900px) 50vw, 33vw" alt="High alpine valley with mountain lakes and forests, Colorado" loading="lazy"></div>
+            <svg class="gallery-zoom-icon" aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+          </div>
+
+          <div class="gallery-item" data-lightbox data-category="mountains"
+            data-src="assets/images/gallery/mt-aspen-grove-golden.webp"
+            data-caption="Golden Aspens — Colorado Fall"
+            tabindex="0" role="button" aria-label="Open: Aspen Grove Golden">
+            <div class="img-reveal" style="width:100%;height:100%;"><img class="img-reveal__blur" src="data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAABQAwCdASoUAA8APzmEuVOvKKWisAgB4CcJZgCdABL8SoX90AD52+jxZigeguNb4NThw9NUhoh1hL27z7SDGRLnMyzzwrjk/le7g0mjHsSeBmtzxdAE3j3YDjpoAA==" alt="" aria-hidden="true"><img class="img-reveal__main" src="assets/images/thumbs/mt-aspen-grove-golden-thumb.webp" srcset="assets/images/thumbs/mt-aspen-grove-golden-thumb.webp 600w, assets/images/gallery/mt-aspen-grove-golden.webp 1200w" sizes="(max-width:600px) 100vw, (max-width:900px) 50vw, 33vw" alt="Golden aspen grove in full fall color with snow on ground" loading="lazy"></div>
+            <svg class="gallery-zoom-icon" aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+          </div>
+
+          <div class="gallery-item" data-lightbox data-category="mountains"
+            data-src="assets/images/gallery/mt-pikes-peak-switchbacks.webp"
+            data-caption="The Road to the Top — Pikes Peak Highway"
+            tabindex="0" role="button" aria-label="Open: Pikes Peak Switchbacks">
+            <div class="img-reveal" style="width:100%;height:100%;"><img class="img-reveal__blur" src="data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAADwAwCdASoUAA0APzmEuVOvKKWisAgB4CcJZACdMoACTpiCLRNN4XSAAP50x/xNi1kgwiM2FBtvb8++BshJSkCmJu02yP7lScwLuQg3iUdB6EOoPio4fUICx6YK8IVrBAAAAA==" alt="" aria-hidden="true"><img class="img-reveal__main" src="assets/images/thumbs/mt-pikes-peak-switchbacks-thumb.webp" srcset="assets/images/thumbs/mt-pikes-peak-switchbacks-thumb.webp 600w, assets/images/gallery/mt-pikes-peak-switchbacks.webp 1200w" sizes="(max-width:600px) 100vw, (max-width:900px) 50vw, 33vw" alt="Aerial view of Pikes Peak Highway switchbacks with blue reservoir below" loading="lazy"></div>
+            <svg class="gallery-zoom-icon" aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+          </div>
+
+          <div class="gallery-item" data-lightbox data-category="mountains"
+            data-src="assets/images/gallery/mt-great-sand-dunes.webp"
+            data-caption="Great Sand Dunes — Colorado"
+            tabindex="0" role="button" aria-label="Open: Great Sand Dunes">
+            <div class="img-reveal" style="width:100%;height:100%;"><img class="img-reveal__blur" src="data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAAAQBACdASoUAAsAPzmKulQvKaWjMAgB4CcJaACdMoGv/gPN61f1kipY1AD912+dMnMXS2lizZi1iXIxsTWcPbgiDYoTsk98pKHVBrICDqQmSDL63sA9gAAA" alt="" aria-hidden="true"><img class="img-reveal__main" src="assets/images/thumbs/mt-great-sand-dunes-thumb.webp" srcset="assets/images/thumbs/mt-great-sand-dunes-thumb.webp 600w, assets/images/gallery/mt-great-sand-dunes.webp 1200w" sizes="(max-width:600px) 100vw, (max-width:900px) 50vw, 33vw" alt="Great Sand Dunes National Park wide view with shrubs in foreground" loading="lazy"></div>
+            <svg class="gallery-zoom-icon" aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+          </div>
+
+          <div class="gallery-item" data-lightbox data-category="mountains"
+            data-src="assets/images/gallery/mt-red-rocks-prairie.webp"
+            data-caption="Red Rocks Prairie — Colorado"
+            tabindex="0" role="button" aria-label="Open: Red Rocks Prairie">
+            <div class="img-reveal" style="width:100%;height:100%;"><img class="img-reveal__blur" src="data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAwBACdASoUAA8APzmEuVOvKKWisAgB4CcJZACdMoRwACW7GwBFTeTq/QAA3lOIs1TOkgNhv6rCDRHSGHnTbof0niKS7gU6pW3ilndz2+stRwgoWr6KqFk69R8LfCmKvgAAAA==" alt="" aria-hidden="true"><img class="img-reveal__main" src="assets/images/thumbs/mt-red-rocks-prairie-thumb.webp" srcset="assets/images/thumbs/mt-red-rocks-prairie-thumb.webp 600w, assets/images/gallery/mt-red-rocks-prairie.webp 1200w" sizes="(max-width:600px) 100vw, (max-width:900px) 50vw, 33vw" alt="Red rocks formation with golden prairie and fence post foreground" loading="lazy"></div>
+            <svg class="gallery-zoom-icon" aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+          </div>
+
+          <div class="gallery-item" data-lightbox data-category="mountains"
+            data-src="assets/images/gallery/mt-colorado-natl-monument.webp"
+            data-caption="Colorado National Monument — Canyon Country"
+            tabindex="0" role="button" aria-label="Open: Colorado National Monument">
+            <div class="img-reveal" style="width:100%;height:100%;"><img class="img-reveal__blur" src="data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAACwAwCdASoUAAsAPzmIuVQvKSWjMAgB4CcJQBWABDm4SyeoSeaqIAD+j56qYkFQbhXscdms1AAFgGlyZtDHVghiUq7kMaIAAAA=" alt="" aria-hidden="true"><img class="img-reveal__main" src="assets/images/thumbs/mt-colorado-natl-monument-thumb.webp" srcset="assets/images/thumbs/mt-colorado-natl-monument-thumb.webp 600w, assets/images/gallery/mt-colorado-natl-monument.webp 1200w" sizes="(max-width:600px) 100vw, (max-width:900px) 50vw, 33vw" alt="Red sandstone canyon at Colorado National Monument at dusk" loading="lazy"></div>
+            <svg class="gallery-zoom-icon" aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+          </div>
+
+          <div class="gallery-item" data-lightbox data-category="mountains"
+            data-src="assets/images/gallery/mt-aspen-fall-mountain.webp"
+            data-caption="Fall Color — Colorado Mountains"
+            tabindex="0" role="button" aria-label="Open: Aspen Fall Mountain">
+            <div class="img-reveal" style="width:100%;height:100%;"><img class="img-reveal__blur" src="data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADwAwCdASoUAAsAPzmEuVOvKKWisAgB4CcJbACdAB51W/bkoY0EpLwAAN4UQuHIEWY1PRe4Nc3odNE/gJI0gChP4JvDToXJTd5Govfl7Kq9EH0Ejz944R4vAAA=" alt="" aria-hidden="true"><img class="img-reveal__main" src="assets/images/thumbs/mt-aspen-fall-mountain-thumb.webp" srcset="assets/images/thumbs/mt-aspen-fall-mountain-thumb.webp 600w, assets/images/gallery/mt-aspen-fall-mountain.webp 1200w" sizes="(max-width:600px) 100vw, (max-width:900px) 50vw, 33vw" alt="Yellow aspen trees on mountain hillside in fall color, Colorado" loading="lazy"></div>
+            <svg class="gallery-zoom-icon" aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+          </div>
+
+          <!-- SKI & SNOW -->
+          <div class="gallery-item" data-lightbox data-category="ski-resort"
+            data-src="assets/images/gallery/sk-breck-mountain-view.webp"
+            data-caption="Top of the Mountain — Breckenridge"
+            tabindex="0" role="button" aria-label="Open: Breckenridge Mountain View">
+            <div class="img-reveal" style="width:100%;height:100%;"><img class="img-reveal__blur" src="data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADQAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJYwCdACIA2fcoA5zBRwAAyiOpXUjXH5AY1AWsl83fLXBcYTs8smJuTHWGXtj5GNp/lkiBQX2zrTBL+FGuDAAA" alt="" aria-hidden="true"><img class="img-reveal__main" src="assets/images/thumbs/sk-breck-mountain-view-thumb.webp" srcset="assets/images/thumbs/sk-breck-mountain-view-thumb.webp 600w, assets/images/gallery/sk-breck-mountain-view.webp 1200w" sizes="(max-width:600px) 100vw, (max-width:900px) 50vw, 33vw" alt="Skier resting on Breckenridge slope with town and mountains below" loading="lazy"></div>
+            <svg class="gallery-zoom-icon" aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+          </div>
+
+          <div class="gallery-item" data-lightbox data-category="ski-resort"
+            data-src="assets/images/gallery/sk-vail-slope-snow-trees.webp"
+            data-caption="Powder Day — Vail, Colorado"
+            tabindex="0" role="button" aria-label="Open: Vail Ski Slope">
+            <div class="img-reveal" style="width:100%;height:100%;"><img class="img-reveal__blur" src="data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQBACdASoUAAsAPzmGuVQvKSWjMAgB4CcJYgCdEf/gNhkXbHlLpNM8AADxyP0oiJDzSmkryenlyWapu/4mkuOFSLlUyYEPmakiVYWRGCu6VhQkMAoOF4Rd579AAA==" alt="" aria-hidden="true"><img class="img-reveal__main" src="assets/images/thumbs/sk-vail-slope-snow-trees-thumb.webp" srcset="assets/images/thumbs/sk-vail-slope-snow-trees-thumb.webp 600w, assets/images/gallery/sk-vail-slope-snow-trees.webp 1200w" sizes="(max-width:600px) 100vw, (max-width:900px) 50vw, 33vw" alt="Vail ski slope with snow-dusted pines and mountain panorama" loading="lazy"></div>
+            <svg class="gallery-zoom-icon" aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+          </div>
+
+          <div class="gallery-item" data-lightbox data-category="ski-resort"
+            data-src="assets/images/gallery/sk-snowboarder-valley.webp"
+            data-caption="Solo Run — Breckenridge"
+            tabindex="0" role="button" aria-label="Open: Snowboarder Valley">
+            <div class="img-reveal" style="width:100%;height:100%;"><img class="img-reveal__blur" src="data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAACwAwCdASoUAAsAPzmIulQvKSWjMAgB4CcJZQCw7B9CtPAlvsIwAADN7MorZPhwqmd4WyFyuGtAGCe8YFoB6SriF9LaJ2EOysgAAA==" alt="" aria-hidden="true"><img class="img-reveal__main" src="assets/images/thumbs/sk-snowboarder-valley-thumb.webp" srcset="assets/images/thumbs/sk-snowboarder-valley-thumb.webp 600w, assets/images/gallery/sk-snowboarder-valley.webp 1200w" sizes="(max-width:600px) 100vw, (max-width:900px) 50vw, 33vw" alt="Lone snowboarder on wide open run with valley and forest below" loading="lazy"></div>
+            <svg class="gallery-zoom-icon" aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+          </div>
+
+          <div class="gallery-item" data-lightbox data-category="ski-resort"
+            data-src="assets/images/gallery/sk-snow-blizzard-pines.webp"
+            data-caption="Whiteout — Colorado"
+            tabindex="0" role="button" aria-label="Open: Snow Blizzard Pines">
+            <div class="img-reveal" style="width:100%;height:100%;"><img class="img-reveal__blur" src="data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAACQAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJZwAAQ9uPjHSBHyAAAPlKWLd1bscjXlrJ6YZtCzHmK6ij3uJaAAAA" alt="" aria-hidden="true"><img class="img-reveal__main" src="assets/images/thumbs/sk-snow-blizzard-pines-thumb.webp" srcset="assets/images/thumbs/sk-snow-blizzard-pines-thumb.webp 600w, assets/images/gallery/sk-snow-blizzard-pines.webp 1200w" sizes="(max-width:600px) 100vw, (max-width:900px) 50vw, 33vw" alt="Snow-laden pine trees in a blizzard whiteout, Colorado" loading="lazy"></div>
+            <svg class="gallery-zoom-icon" aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+          </div>
+
+          <!-- TRAVEL -->
+          <div class="gallery-item" data-lightbox data-category="travel"
+            data-src="assets/images/gallery/tr-alaska-seward-harbor.webp"
+            data-caption="Dawn at the Harbor — Seward, Alaska"
+            tabindex="0" role="button" aria-label="Open: Alaska Seward Harbor">
+            <div class="img-reveal" style="width:100%;height:100%;"><img class="img-reveal__blur" src="data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAACwAwCdASoUAA8APzmGuVOvKSWisAgB4CcJZQAAN3t/NSGENP5/wADW17TZKUaTZGaDkLGHCUkw/p1QaCbl24oNll4lzu4NYl1s/hMQD3X+hlMwGHk/X1uGwCQN/4gA" alt="" aria-hidden="true"><img class="img-reveal__main" src="assets/images/thumbs/tr-alaska-seward-harbor-thumb.webp" srcset="assets/images/thumbs/tr-alaska-seward-harbor-thumb.webp 600w, assets/images/gallery/tr-alaska-seward-harbor.webp 1200w" sizes="(max-width:600px) 100vw, (max-width:900px) 50vw, 33vw" alt="Seward Alaska harbor at dawn with dramatic clouds and mountain backdrop" loading="lazy"></div>
+            <svg class="gallery-zoom-icon" aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+          </div>
+
+          <div class="gallery-item" data-lightbox data-category="travel"
+            data-src="assets/images/gallery/tr-alaska-wildflower-meadow.webp"
+            data-caption="Fireweed — Homer, Alaska"
+            tabindex="0" role="button" aria-label="Open: Alaska Wildflower Meadow">
+            <div class="img-reveal" style="width:100%;height:100%;"><img class="img-reveal__blur" src="data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAACQAwCdASoUAAsAPzmGulQvKSWjMAgB4CcJQBadBDlGaavFahQAAP5lm/G22TQqEFapru9uEOEaGpiNxgecRrIENpqMdkO9Yt7Nx6hI3AA=" alt="" aria-hidden="true"><img class="img-reveal__main" src="assets/images/thumbs/tr-alaska-wildflower-meadow-thumb.webp" srcset="assets/images/thumbs/tr-alaska-wildflower-meadow-thumb.webp 600w, assets/images/gallery/tr-alaska-wildflower-meadow.webp 1200w" sizes="(max-width:600px) 100vw, (max-width:900px) 50vw, 33vw" alt="Fireweed wildflowers with snow-capped Alaska mountains at sunset" loading="lazy"></div>
+            <svg class="gallery-zoom-icon" aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+          </div>
+
+          <div class="gallery-item" data-lightbox data-category="travel"
+            data-src="assets/images/gallery/tr-cabo-arch-sunset.webp"
+            data-caption="El Arco at Sunset — Cabo San Lucas"
+            tabindex="0" role="button" aria-label="Open: Cabo Arch Sunset">
+            <div class="img-reveal" style="width:100%;height:100%;"><img class="img-reveal__blur" src="data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAwBACdASoUAAsAPzmEuVOvKKWisAgB4CcJYgCxAKAAOLLnq1tvqD96+SQA/FJWcNg6FU1yKXUzXKzCVhv2NnNWcv6pRV7PKpatq0TlTni2XBsLZsFVe7ZCbV0g/6vOBVkAAA==" alt="" aria-hidden="true"><img class="img-reveal__main" src="assets/images/thumbs/tr-cabo-arch-sunset-thumb.webp" srcset="assets/images/thumbs/tr-cabo-arch-sunset-thumb.webp 600w, assets/images/gallery/tr-cabo-arch-sunset.webp 1200w" sizes="(max-width:600px) 100vw, (max-width:900px) 50vw, 33vw" alt="El Arco rock arch at Cabo San Lucas glowing golden at sunset" loading="lazy"></div>
+            <svg class="gallery-zoom-icon" aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+          </div>
+
+          <div class="gallery-item" data-lightbox data-category="travel"
+            data-src="assets/images/gallery/tr-grand-canyon-panorama.webp"
+            data-caption="Grand Canyon Panorama — South Rim"
+            tabindex="0" role="button" aria-label="Open: Grand Canyon Panorama">
+            <div class="img-reveal" style="width:100%;height:100%;"><img class="img-reveal__blur" src="data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAACwAwCdASoUAAUAPzmGulOvKKWisAgB4CcJQBOmUABGdO5p7vBEgAD+n7Nn/a1zW8dgQ5p3W/lyrQIao+4HX83J3EuxsIE0AAA=" alt="" aria-hidden="true"><img class="img-reveal__main" src="assets/images/thumbs/tr-grand-canyon-panorama-thumb.webp" srcset="assets/images/thumbs/tr-grand-canyon-panorama-thumb.webp 600w, assets/images/gallery/tr-grand-canyon-panorama.webp 1200w" sizes="(max-width:600px) 100vw, (max-width:900px) 50vw, 33vw" alt="Grand Canyon panorama from South Rim showing layered red rock formations" loading="lazy"></div>
+            <svg class="gallery-zoom-icon" aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+          </div>
+
+          <div class="gallery-item" data-lightbox data-category="travel"
+            data-src="assets/images/gallery/tr-alaska-denali-limo.webp"
+            data-caption="Only in Alaska — Denali Overland Limo"
+            tabindex="0" role="button" aria-label="Open: Alaska Denali Limo">
+            <div class="img-reveal" style="width:100%;height:100%;"><img class="img-reveal__blur" src="data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAACwAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJZACdACPyHIQBzVicfAD+297DEsfvHSVNX3Z/D5xLQztKJ43SB61vykE9+ZS+KZ/4bkokWmrMQro+U/paoFw3sVqGS8BslV2NPEFDRX30R65xMAA=" alt="" aria-hidden="true"><img class="img-reveal__main" src="assets/images/thumbs/tr-alaska-denali-limo-thumb.webp" srcset="assets/images/thumbs/tr-alaska-denali-limo-thumb.webp 600w, assets/images/gallery/tr-alaska-denali-limo.webp 1200w" sizes="(max-width:600px) 100vw, (max-width:900px) 50vw, 33vw" alt="Denali Overland Transportation vintage yellow stretch limousine, Talkeetna Alaska" loading="lazy"></div>
+            <svg class="gallery-zoom-icon" aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+          </div>
+
+          <!-- TRAVEL (new) -->
+          <div class="gallery-item" data-lightbox data-category="travel"
+            data-src="assets/images/gallery/tr-alaska-glacier-panorama.webp"
+            data-caption="Holgate Glacier — Kenai Fjords, Alaska"
+            tabindex="0" role="button" aria-label="Open: Alaska Holgate Glacier Panorama">
+            <div class="img-reveal" style="width:100%;height:100%;"><img class="img-reveal__blur" src="data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAACQAwCdASoUAAYAPzmIulQvKSWjMAgB4CcJQAALu9gTo3FZ9gAAAPvpUsYgOl69K81icBNz03oeQxJzAAQ4q/I2+gAAAA==" alt="" aria-hidden="true"><img class="img-reveal__main" src="assets/images/thumbs/tr-alaska-glacier-panorama-thumb.webp" srcset="assets/images/thumbs/tr-alaska-glacier-panorama-thumb.webp 600w, assets/images/gallery/tr-alaska-glacier-panorama.webp 1200w" sizes="(max-width:600px) 100vw, (max-width:900px) 50vw, 33vw" alt="Holgate Glacier panorama with blue ice face, Kenai Fjords Alaska" loading="lazy"></div>
+            <svg class="gallery-zoom-icon" aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+          </div>
+
+          <div class="gallery-item" data-lightbox data-category="travel"
+            data-src="assets/images/gallery/tr-utah-canyonlands-aerial.webp"
+            data-caption="Green River Overlook — Canyonlands, Utah"
+            tabindex="0" role="button" aria-label="Open: Canyonlands Aerial Panorama">
+            <div class="img-reveal" style="width:100%;height:100%;"><img class="img-reveal__blur" src="data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAACwAwCdASoUAAcAPzmGulQvKSWjMAgB4CcJYgCdACFrx6jR6TG2UADLQWQ8ObY1j2prMU7PMfRjvxLsd3JmIp+xwGYyAMRAAAA=" alt="" aria-hidden="true"><img class="img-reveal__main" src="assets/images/thumbs/tr-utah-canyonlands-aerial-thumb.webp" srcset="assets/images/thumbs/tr-utah-canyonlands-aerial-thumb.webp 600w, assets/images/gallery/tr-utah-canyonlands-aerial.webp 1200w" sizes="(max-width:600px) 100vw, (max-width:900px) 50vw, 33vw" alt="Aerial view of Canyonlands canyon maze, Green River Overlook, Utah" loading="lazy"></div>
+            <svg class="gallery-zoom-icon" aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+          </div>
+
+          <div class="gallery-item" data-lightbox data-category="travel"
+            data-src="assets/images/gallery/tr-yellowstone-lower-falls.webp"
+            data-caption="Lower Falls Rainbow — Grand Canyon of the Yellowstone"
+            tabindex="0" role="button" aria-label="Open: Yellowstone Lower Falls Rainbow">
+            <div class="img-reveal" style="width:100%;height:100%;"><img class="img-reveal__blur" src="data:image/webp;base64,UklGRsQAAABXRUJQVlA4ILgAAAAwBQCdASoUABoAPzmSu1gvKiWjqAqp4CcJZAC7AA1BMcw3t+P5UCDE0k9nBjVOmfpyGADh+37FfqLN++nEh0yMAmAnjCYGftOxxwlD/O+QXf1shbbHPYCrJnFc1ISCCEkv65AsBrR4aSv77ZVBFUioQGfvR2QMvocYAp0W9zN6BsQ6XhHXw2Hgh9f6Wa0T5l/YMt++0BYER7oHjtF1PtU/2FUD1rSTvBAqz+58foz1cW3wqEabe2QA" alt="" aria-hidden="true"><img class="img-reveal__main" src="assets/images/thumbs/tr-yellowstone-lower-falls-thumb.webp" srcset="assets/images/thumbs/tr-yellowstone-lower-falls-thumb.webp 600w, assets/images/gallery/tr-yellowstone-lower-falls.webp 1200w" sizes="(max-width:600px) 100vw, (max-width:900px) 50vw, 33vw" alt="Yellowstone Lower Falls with rainbow, Grand Canyon of the Yellowstone, long exposure" loading="lazy"></div>
+            <svg class="gallery-zoom-icon" aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+          </div>
+
+          <!-- MOUNTAINS (new) -->
+          <div class="gallery-item" data-lightbox data-category="mountains"
+            data-src="assets/images/gallery/mt-great-sand-dunes-panorama.webp"
+            data-caption="Prairie Edge — Great Sand Dunes, Colorado"
+            tabindex="0" role="button" aria-label="Open: Great Sand Dunes Wide Panorama">
+            <div class="img-reveal" style="width:100%;height:100%;"><img class="img-reveal__blur" src="data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAACQAwCdASoUAAMAPzmEuVOvKKWisAgB4CcJQBadBFKjEmxwljgAAM3ab2mGIJ1h+PrpCNCD4tc1zftPFf/FODQgAAA=" alt="" aria-hidden="true"><img class="img-reveal__main" src="assets/images/thumbs/mt-great-sand-dunes-panorama-thumb.webp" srcset="assets/images/thumbs/mt-great-sand-dunes-panorama-thumb.webp 600w, assets/images/gallery/mt-great-sand-dunes-panorama.webp 1200w" sizes="(max-width:600px) 100vw, (max-width:900px) 50vw, 33vw" alt="Great Sand Dunes wide panorama with prairie scrub foreground, Colorado" loading="lazy"></div>
+            <svg class="gallery-zoom-icon" aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+          </div>
+
+          <div class="gallery-item" data-lightbox data-category="mountains"
+            data-src="assets/images/gallery/mt-great-sand-dunes-storm.webp"
+            data-caption="Storm Light — Great Sand Dunes, Colorado"
+            tabindex="0" role="button" aria-label="Open: Great Sand Dunes Storm Reflection">
+            <div class="img-reveal" style="width:100%;height:100%;"><img class="img-reveal__blur" src="data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAADQBACdASoUABQAPzmSv1mvKaYjqAgB4CcJZQC7MyGBekrv7aoGGIIomIExk492wAD+g0iRkAgu435rY7AdibP+OHjl+OzRy6XNiyFDOD2VC9fxw+mpZE9bm58mz2Jb+EahE8EDJUGYSVtHAAA=" alt="" aria-hidden="true"><img class="img-reveal__main" src="assets/images/thumbs/mt-great-sand-dunes-storm-thumb.webp" srcset="assets/images/thumbs/mt-great-sand-dunes-storm-thumb.webp 600w, assets/images/gallery/mt-great-sand-dunes-storm.webp 1200w" sizes="(max-width:600px) 100vw, (max-width:900px) 50vw, 33vw" alt="Great Sand Dunes under dramatic storm light with water reflection, Colorado" loading="lazy"></div>
+            <svg class="gallery-zoom-icon" aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+          </div>
+
+          <div class="gallery-item" data-lightbox data-category="mountains"
+            data-src="assets/images/gallery/mt-colorado-ancient-juniper.webp"
+            data-caption="Ancient Juniper — Colorado Canyon Country"
+            tabindex="0" role="button" aria-label="Open: Colorado Ancient Juniper">
+            <div class="img-reveal" style="width:100%;height:100%;"><img class="img-reveal__blur" src="data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAwAwCdASoUAA8APzmGuVOvKSWisAgB4CcJQBhQARuGoLB8AP5w9te6GuzZaJW3ja3rpJknpLpGW1HnpuEVO9+KyuCNAKEgaOyBCWDAHX0F4bMx0AA=" alt="" aria-hidden="true"><img class="img-reveal__main" src="assets/images/thumbs/mt-colorado-ancient-juniper-thumb.webp" srcset="assets/images/thumbs/mt-colorado-ancient-juniper-thumb.webp 600w, assets/images/gallery/mt-colorado-ancient-juniper.webp 1200w" sizes="(max-width:600px) 100vw, (max-width:900px) 50vw, 33vw" alt="Ancient twisted juniper pine with gnarled branches against canyon backdrop, Colorado" loading="lazy"></div>
+            <svg class="gallery-zoom-icon" aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+          </div>
+
+          <!-- PEOPLE -->
+          <div class="gallery-item" data-lightbox data-category="people"
+            data-src="assets/images/gallery/pp-duck-hunter-marsh.webp"
+            data-caption="Early Season — Duck Hunter in the Marsh"
+            tabindex="0" role="button" aria-label="Open: Duck Hunter Marsh Canoe">
+            <div class="img-reveal" style="width:100%;height:100%;"><img class="img-reveal__blur" src="data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAACwAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJYgCdABUgX/Bk4Gq0AAD9/BzrHRrFcB93q0vX78fk+xatD9AL0/Z+lEJz9XkEPZWibbbmX1keBl6Lw0aUDUsPAAA=" alt="" aria-hidden="true"><img class="img-reveal__main" src="assets/images/thumbs/pp-duck-hunter-marsh-thumb.webp" srcset="assets/images/thumbs/pp-duck-hunter-marsh-thumb.webp 600w, assets/images/gallery/pp-duck-hunter-marsh.webp 1200w" sizes="(max-width:600px) 100vw, (max-width:900px) 50vw, 33vw" alt="Duck hunter in camo gear sitting in canoe among marsh reeds" loading="lazy"></div>
+            <svg class="gallery-zoom-icon" aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+          </div>
+
+        </div><!-- /gallery-masonry -->
+
+      </div>
+    </section>
+
+    <!-- PRINTS CTA -->
+    <section class="cta-banner" aria-labelledby="gallery-cta-heading">
+      <div class="cta-inner">
+        <h2 id="gallery-cta-heading">Like What You See?</h2>
+        <p>Every image in the gallery is available as a fine art print — multiple sizes, archival paper, signed.</p>
+        <a href="prints.html" class="btn btn--primary">Shop Fine Art Prints</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Photo lightbox" tabindex="-1">
+    <button id="lb-close" class="lightbox-close" aria-label="Close lightbox">✕</button>
+    <button id="lb-prev" class="lightbox-nav lightbox-prev" aria-label="Previous photo">‹</button>
+    <button id="lb-next" class="lightbox-nav lightbox-next" aria-label="Next photo">›</button>
+    <div class="lightbox-inner">
+      <img id="lb-img" class="lightbox-img" src="" alt="">
+      <p id="lb-caption" class="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-wordmark">True Nord</div>
+        <div class="footer-tagline">Photography</div>
+        <p>Minnesota landscape, wildlife, and nature photography. Fine art prints — signed and shipped from Minnesota.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <h4>Explore</h4>
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="prints.html">Prints</a>
+        <a href="about.html">About</a>
+      </nav>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>Minnesota</p>
+        <p><a href="mailto:tj@truenord.photo">tj@truenord.photo</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="footer-year"></span> True Nord. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+
+  <a href="#" class="back-to-top" aria-label="Back to top">↑ Top</a>
+
+</body>
+</html>

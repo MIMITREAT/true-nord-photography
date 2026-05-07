@@ -1,0 +1,20 @@
+# Claude worktrees / session data
+.claude/
+
+# Wrangler cache
+.wrangler/
+
+# Raw source photos and original JPEGs — only webp assets go to git
+assets/Photos/
+
+# Node / image pipeline temp files
+node_modules/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.cursor/

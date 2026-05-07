@@ -1,0 +1,448 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="True Nord fine art prints — Minnesota landscapes and wildlife. Museum-quality giclée prints, multiple sizes, signed by the artist. Ships from Minnesota.">
+  <meta name="theme-color" content="#c87941">
+  <title>Fine Art Prints | True Nord — Minnesota</title>
+  <link rel="canonical" href="https://truenord.photo/prints.html">
+
+  <meta property="og:title"       content="Fine Art Prints | True Nord">
+  <meta property="og:description" content="Museum-quality giclée prints of Minnesota landscapes and wildlife. Multiple sizes, archival paper, signed.">
+  <meta property="og:image"       content="https://truenord.photo/assets/og-image.jpg">
+  <meta property="og:url"         content="https://truenord.photo/prints.html">
+
+  <link rel="preload" href="styles.css" as="style">
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+    as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap">
+  </noscript>
+
+  <style>
+    .prints-hero {
+      background: var(--black-900);
+      padding: 100px var(--space-lg) var(--space-xl);
+      text-align: center;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .prints-hero h1 {
+      font-family: var(--font-display);
+      color: var(--white);
+      font-size: var(--text-4xl);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: var(--space-sm);
+    }
+    .prints-hero p {
+      color: rgba(255,255,255,0.65);
+      font-size: var(--text-lg);
+      max-width: 520px;
+      margin: 0 auto var(--space-xl);
+    }
+    .prints-hero-badges {
+      display: flex; gap: var(--space-sm); justify-content: center; flex-wrap: wrap;
+    }
+    .prints-hero-badge {
+      background: rgba(200,121,65,0.15);
+      border: 1px solid rgba(200,121,65,0.35);
+      color: var(--accent-light);
+      font-size: var(--text-xs);
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border-radius: 99px;
+    }
+    /* Print card image placeholder */
+    .print-ph {
+      width: 100%; height: 100%;
+      display: flex; align-items: center; justify-content: center;
+      color: rgba(255,255,255,0.1);
+      font-family: Georgia, serif;
+      font-size: 0.8rem;
+      text-align: center;
+      padding: 1.5rem;
+    }
+    /* How it works steps */
+    .steps {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-xl);
+      counter-reset: step;
+    }
+    @media (min-width: 768px) { .steps { grid-template-columns: repeat(3, 1fr); } }
+    .step {
+      text-align: center;
+      counter-increment: step;
+      padding: var(--space-xl);
+    }
+    .step-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 56px; height: 56px;
+      border-radius: 50%;
+      background: var(--accent);
+      color: #fff;
+      font-size: var(--text-xl);
+      font-weight: 800;
+      margin: 0 auto var(--space-md);
+    }
+    .step h3 {
+      font-family: var(--font-display);
+      font-size: var(--text-xl);
+      margin-bottom: var(--space-sm);
+    }
+    .step p { color: var(--fg-secondary); font-size: var(--text-sm); }
+    /* FAQ */
+    .faq { display: flex; flex-direction: column; gap: var(--space-sm); }
+    .faq-item { border: 1px solid var(--border); border-radius: var(--radius-sm); overflow: hidden; }
+    .faq-question {
+      padding: var(--space-lg); font-weight: 600; font-size: var(--text-base);
+      cursor: pointer; list-style: none;
+      display: flex; justify-content: space-between; align-items: center;
+      background: var(--glass-bg);
+    }
+    .faq-question::-webkit-details-marker { display: none; }
+    .faq-question::after {
+      content: '+'; font-size: 1.4rem; color: var(--accent);
+      transition: transform 0.3s; flex-shrink: 0; margin-left: var(--space-md);
+    }
+    details[open] .faq-question::after { transform: rotate(45deg); }
+    .faq-answer { padding: 0 var(--space-lg) var(--space-lg); color: var(--fg-secondary); line-height: 1.8; }
+  </style>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  <header class="navbar" role="banner">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-brand" aria-label="True Nord — Home">
+        <div class="navbar-wordmark">
+          True Nord
+          <span>Photography</span>
+        </div>
+      </a>
+      <button class="navbar-toggle" aria-expanded="false"
+        aria-controls="navMenu" aria-label="Toggle navigation">
+        <span aria-hidden="true">☰</span>
+      </button>
+      <nav class="navbar-mobile" id="navMenu" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="prints.html" aria-current="page">Prints</a>
+        <a href="about.html">About</a>
+        <a href="index.html#contact" class="btn btn--primary btn--sm">Inquire</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+
+    <!-- HERO -->
+    <div class="prints-hero">
+      <p class="section-eyebrow" style="margin-bottom:var(--space-md)">Fine Art Prints</p>
+      <h1>Bring Minnesota Home</h1>
+      <p>Museum-quality giclée prints on archival paper. Every print is signed by TJ and shipped from Minnesota.</p>
+      <div class="prints-hero-badges">
+        <span class="prints-hero-badge">Giclée Archival Printing</span>
+        <span class="prints-hero-badge">Signed by the Artist</span>
+        <span class="prints-hero-badge">6 Sizes Available</span>
+        <span class="prints-hero-badge">Ships from Minnesota</span>
+      </div>
+    </div>
+
+    <!-- PRINT GRID -->
+    <section class="section" aria-labelledby="prints-heading">
+      <div class="section-inner">
+        <p class="section-eyebrow">Available Prints</p>
+        <h2 id="prints-heading">Select Your Print</h2>
+        <p class="section-intro">Choose a size, then use the inquiry form to order. Each print is produced to order on premium archival paper.</p>
+
+        <div class="print-grid">
+
+          <!-- Print 1 -->
+          <article class="print-card scroll-fade-up">
+            <div class="print-card-img">
+              <img class="img-reveal__blur" src="data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAABQBACdASoUAA8APzmGuVOvKSWisAgB4CcJZgCdMoMYPX9AeBCq2ONKx7+AAPGxyBSul7SOjq1/aB9pu4ihqTwg492iyzKo86pdRTmV7vvje08GMKcr04C4+6AAAA==" alt="" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:blur(12px);transform:scale(1.08);transition:opacity 0.4s ease;"><img class="img-reveal__main" src="assets/images/prints/print-01-duluth-bridge-sunrise.webp" alt="Duluth Aerial Lift Bridge at sunrise over Lake Superior" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+              <span class="print-card-badge">Best Seller</span>
+            </div>
+            <div class="print-card-body">
+              <h3>Sunrise on the Bay</h3>
+              <p class="print-card-location">Duluth, Minnesota</p>
+              <div class="print-sizes" role="group" aria-label="Select print size">
+                <button class="print-size-btn" data-price="85">8×10</button>
+                <button class="print-size-btn selected" data-price="145">11×14</button>
+                <button class="print-size-btn" data-price="225">16×20</button>
+                <button class="print-size-btn" data-price="365">20×24</button>
+                <button class="print-size-btn" data-price="525">24×30</button>
+              </div>
+              <div class="print-price">$145 <span>USD</span></div>
+              <a href="index.html#contact?print=duluth-bridge-sunrise" class="btn btn--primary btn--full">Inquire to Order</a>
+            </div>
+          </article>
+
+          <!-- Print 2 -->
+          <article class="print-card scroll-fade-up">
+            <div class="print-card-img">
+              <img class="img-reveal__blur" src="data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADQAwCdASoUAAsAPzmGuVOvKSWisAgB4CcJZACdEf/gQCy7g9JueAAA94rmdPXUhud/aFJrTmvgetuekxmAOJ/X156lgE3FEE0s367wAAA=" alt="" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:blur(12px);transform:scale(1.08);transition:opacity 0.4s ease;"><img class="img-reveal__main" src="assets/images/prints/print-02-lake-superior-cliff.webp" alt="Palisade Head cliff overlooking Lake Superior, North Shore Minnesota" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+              <span class="print-card-badge">Iconic MN</span>
+            </div>
+            <div class="print-card-body">
+              <h3>Edge of the North</h3>
+              <p class="print-card-location">Palisade Head, North Shore</p>
+              <div class="print-sizes" role="group" aria-label="Select print size">
+                <button class="print-size-btn" data-price="85">8×10</button>
+                <button class="print-size-btn selected" data-price="145">11×14</button>
+                <button class="print-size-btn" data-price="225">16×20</button>
+                <button class="print-size-btn" data-price="365">20×24</button>
+                <button class="print-size-btn" data-price="525">24×30</button>
+                <button class="print-size-btn" data-price="795">30×40</button>
+              </div>
+              <div class="print-price">$145 <span>USD</span></div>
+              <a href="index.html#contact?print=lake-superior-cliff" class="btn btn--primary btn--full">Inquire to Order</a>
+            </div>
+          </article>
+
+          <!-- Print 3 -->
+          <article class="print-card scroll-fade-up">
+            <div class="print-card-img">
+              <img class="img-reveal__blur" src="data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAQBACdASoUAA0APzmEuVOvKKWisAgB4CcJYgDA3CHgQhSfbIr4R3ISoAD+6MygMxBmuys01e+b1iTBXDZ8G/F+wrfkLi4lyTxWwzaYGD85ZFgdz/GsvZmsAAA=" alt="" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:blur(12px);transform:scale(1.08);transition:opacity 0.4s ease;"><img class="img-reveal__main" src="assets/images/prints/print-03-aurora-winter-camp.webp" alt="Northern lights aurora borealis over lit canvas tent in winter forest" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+              <span class="print-card-badge">Night Sky</span>
+            </div>
+            <div class="print-card-body">
+              <h3>Northern Lights</h3>
+              <p class="print-card-location">Minnesota North Woods</p>
+              <div class="print-sizes" role="group" aria-label="Select print size">
+                <button class="print-size-btn" data-price="95">8×10</button>
+                <button class="print-size-btn selected" data-price="175">11×14</button>
+                <button class="print-size-btn" data-price="265">16×20</button>
+                <button class="print-size-btn" data-price="395">20×24</button>
+                <button class="print-size-btn" data-price="595">24×30</button>
+              </div>
+              <div class="print-price">$175 <span>USD</span></div>
+              <a href="index.html#contact?print=aurora-winter-camp" class="btn btn--primary btn--full">Inquire to Order</a>
+            </div>
+          </article>
+
+          <!-- Print 4 -->
+          <article class="print-card scroll-fade-up">
+            <div class="print-card-img">
+              <img class="img-reveal__blur" src="data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADwAwCdASoUAA0APzmGulOvKKWisAgB4CcJZQDImBTvY/rFXRgwypwEANxpAlK/ZQCZPQd9mE5N0u7uHRtWNLcWyqCazWKKX6A6FptaNQiPZdTqxcIY5kDQSSWUF4AA" alt="" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:blur(12px);transform:scale(1.08);transition:opacity 0.4s ease;"><img class="img-reveal__main" src="assets/images/prints/print-04-star-trails-circular.webp" alt="Circular star trails rotating around Polaris above silhouetted pines" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+              <span class="print-card-badge">Night Sky</span>
+            </div>
+            <div class="print-card-body">
+              <h3>All Night Long</h3>
+              <p class="print-card-location">Dark Sky, Minnesota</p>
+              <div class="print-sizes" role="group" aria-label="Select print size">
+                <button class="print-size-btn" data-price="95">8×10</button>
+                <button class="print-size-btn selected" data-price="175">11×14</button>
+                <button class="print-size-btn" data-price="265">16×20</button>
+                <button class="print-size-btn" data-price="395">20×24</button>
+                <button class="print-size-btn" data-price="595">24×30</button>
+                <button class="print-size-btn" data-price="895">30×40</button>
+              </div>
+              <div class="print-price">$175 <span>USD</span></div>
+              <a href="index.html#contact?print=star-trails-circular" class="btn btn--primary btn--full">Inquire to Order</a>
+            </div>
+          </article>
+
+          <!-- Print 5 -->
+          <article class="print-card scroll-fade-up">
+            <div class="print-card-img">
+              <img class="img-reveal__blur" src="data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAABQAwCdASoUAA0APzmGuVOvKSWisAgB4CcJaQAAUkpptSBGQAD+gCfzoA/S5DeoSVBykIvRgM8/2RXIrd4iMkRCsb/9O3TO0sjNr7IAAAA=" alt="" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:blur(12px);transform:scale(1.08);transition:opacity 0.4s ease;"><img class="img-reveal__main" src="assets/images/prints/print-05-moose-portrait-bw.webp" alt="Moose close portrait in black and white, North Woods Minnesota" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+              <span class="print-card-badge">Wildlife</span>
+            </div>
+            <div class="print-card-body">
+              <h3>The Northland's Own</h3>
+              <p class="print-card-location">Minnesota North Woods</p>
+              <div class="print-sizes" role="group" aria-label="Select print size">
+                <button class="print-size-btn" data-price="85">8×10</button>
+                <button class="print-size-btn selected" data-price="145">11×14</button>
+                <button class="print-size-btn" data-price="225">16×20</button>
+                <button class="print-size-btn" data-price="365">20×24</button>
+                <button class="print-size-btn" data-price="525">24×30</button>
+              </div>
+              <div class="print-price">$145 <span>USD</span></div>
+              <a href="index.html#contact?print=moose-portrait-bw" class="btn btn--primary btn--full">Inquire to Order</a>
+            </div>
+          </article>
+
+          <!-- Print 6 -->
+          <article class="print-card scroll-fade-up">
+            <div class="print-card-img">
+              <img class="img-reveal__blur" src="data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADQAwCdASoUAA0APzmGulQvKSWjMAgB4CcJQAXf+A+Fylp4RvBXtQAAyxo5xGlFEhAnhtHb7QWk/kZRJAlwBp56GSLJ4Pcph68JsF5N4vq45j3Tj8eLIrZWUPMWUPDoAAA=" alt="" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:blur(12px);transform:scale(1.08);transition:opacity 0.4s ease;"><img class="img-reveal__main" src="assets/images/prints/print-06-black-canyon-sunset.webp" alt="Black Canyon of the Gunnison deep canyon at golden hour" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+              <span class="print-card-badge">Landscape</span>
+            </div>
+            <div class="print-card-body">
+              <h3>Into the Deep</h3>
+              <p class="print-card-location">Black Canyon of the Gunnison</p>
+              <div class="print-sizes" role="group" aria-label="Select print size">
+                <button class="print-size-btn" data-price="85">8×10</button>
+                <button class="print-size-btn selected" data-price="145">11×14</button>
+                <button class="print-size-btn" data-price="225">16×20</button>
+                <button class="print-size-btn" data-price="365">20×24</button>
+                <button class="print-size-btn" data-price="525">24×30</button>
+                <button class="print-size-btn" data-price="795">30×40</button>
+              </div>
+              <div class="print-price">$145 <span>USD</span></div>
+              <a href="index.html#contact?print=black-canyon-sunset" class="btn btn--primary btn--full">Inquire to Order</a>
+            </div>
+          </article>
+
+        </div><!-- /print-grid -->
+
+        <p class="text-center mt-xl text-muted" style="font-size:var(--text-sm)">
+          Don't see the image you want? <a href="index.html#contact" style="color:var(--accent)">Send an inquiry</a> — any gallery image is available as a print.
+        </p>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section section--alt section--has-divider" aria-labelledby="how-heading">
+      <div class="section-inner">
+        <p class="section-eyebrow">The Process</p>
+        <h2 id="how-heading">How It Works</h2>
+        <p class="section-intro">Simple, personal, and done right. Every print is made to order — no warehouses, no mass production.</p>
+        <div class="steps">
+          <div class="step scroll-fade-up">
+            <div class="step-num">1</div>
+            <h3>Choose Your Print</h3>
+            <p>Browse the gallery and select the image and size that's right for your space. Use the inquiry form or email directly.</p>
+          </div>
+          <div class="step scroll-fade-up">
+            <div class="step-num">2</div>
+            <h3>Confirm & Pay</h3>
+            <p>TJ will respond personally to confirm your order, answer questions, and send a payment link. Quick and straightforward.</p>
+          </div>
+          <div class="step scroll-fade-up">
+            <div class="step-num">3</div>
+            <h3>Ships from Minnesota</h3>
+            <p>Your print is produced on archival giclée paper, signed, and carefully packaged for shipping. Most orders ship within 7–10 business days.</p>
+          </div>
+        </div>
+      </div>
+      <div class="section-divider" aria-hidden="true">
+        <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+          <path d="M0,60 C360,0 1080,0 1440,60 L1440,60 L0,60Z" fill="var(--chrome)"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- PRINT QUALITY DETAILS -->
+    <section class="section section--has-divider" aria-labelledby="quality-heading">
+      <div class="section-inner section-inner--medium">
+        <div class="split-row split-row--reverse">
+          <div class="split-row__image scroll-slide-right">
+            <div style="aspect-ratio:4/3;border-radius:1rem;overflow:hidden;box-shadow:0 20px 40px -8px rgba(0,0,0,0.2);background:linear-gradient(135deg,#1a1a1a,#2a2520);display:flex;align-items:center;justify-content:center">
+              <span style="color:rgba(255,255,255,0.15);font-family:Georgia,serif;font-size:1rem;text-align:center;padding:2rem">Print quality detail photo<br><span style="font-size:0.75rem;opacity:0.6">assets/images/print-quality.webp</span></span>
+            </div>
+          </div>
+          <div class="split-row__content scroll-slide-left">
+            <p class="eyebrow">Print Quality</p>
+            <h2 id="quality-heading">Archival. Museum-Grade. Built to Last.</h2>
+            <p>Every print uses Epson UltraChrome HDX pigment inks on 100% cotton rag fine art paper — the same standard used by galleries and museums. Colors stay true for 100+ years under normal display conditions.</p>
+            <p>Prints arrive with a Certificate of Authenticity, hand-signed by TJ Nordberg, with the edition number, title, and location noted.</p>
+            <ul style="list-style:none;margin-bottom:var(--space-xl)">
+              <li style="padding:0.5rem 0;border-bottom:1px solid var(--border);font-size:var(--text-sm);display:flex;gap:0.5rem"><span style="color:var(--accent);font-weight:700">✓</span> Epson UltraChrome HDX pigment inks</li>
+              <li style="padding:0.5rem 0;border-bottom:1px solid var(--border);font-size:var(--text-sm);display:flex;gap:0.5rem"><span style="color:var(--accent);font-weight:700">✓</span> 100% cotton rag fine art paper</li>
+              <li style="padding:0.5rem 0;border-bottom:1px solid var(--border);font-size:var(--text-sm);display:flex;gap:0.5rem"><span style="color:var(--accent);font-weight:700">✓</span> 100+ year archival rating</li>
+              <li style="padding:0.5rem 0;border-bottom:1px solid var(--border);font-size:var(--text-sm);display:flex;gap:0.5rem"><span style="color:var(--accent);font-weight:700">✓</span> Signed Certificate of Authenticity</li>
+              <li style="padding:0.5rem 0;font-size:var(--text-sm);display:flex;gap:0.5rem"><span style="color:var(--accent);font-weight:700">✓</span> Carefully flat-packed or tube-rolled for shipping</li>
+            </ul>
+            <a href="index.html#contact" class="btn btn--outline">Ask a Question</a>
+          </div>
+        </div>
+      </div>
+      <div class="section-divider" aria-hidden="true">
+        <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+          <path d="M0,30 L90,0 L180,30 L270,0 L360,30 L450,0 L540,30 L630,0 L720,30 L810,0 L900,30 L990,0 L1080,30 L1170,0 L1260,30 L1350,0 L1440,30 L1440,60 L0,60Z" fill="var(--pearl)"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section--alt" aria-labelledby="faq-heading">
+      <div class="section-inner section-inner--medium">
+        <p class="section-eyebrow">FAQ</p>
+        <h2 id="faq-heading">Common Questions</h2>
+        <div class="faq">
+          <details class="faq-item">
+            <summary class="faq-question">Do you offer framing?</summary>
+            <div class="faq-answer">Not at this time — prints ship unframed so you can choose the framing that best fits your space. I'm happy to make recommendations on frame styles that work well for each image.</div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">Can I request a custom size?</summary>
+            <div class="faq-answer">Yes. Reach out via the contact form with the image you want and your desired dimensions. Custom sizing is available at pricing based on square inches — just ask.</div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">Do you offer commercial licensing?</summary>
+            <div class="faq-answer">Yes. Images are available for editorial, commercial, and advertising use. Contact me directly for licensing terms and pricing — I respond to every inquiry personally.</div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">How are prints shipped?</summary>
+            <div class="faq-answer">Smaller prints (up to 16×20) ship flat-packed between rigid boards. Larger prints ship in archival tubes. All shipments are insured and tracked. I ship USPS Priority and UPS domestically.</div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">What's your return policy?</summary>
+            <div class="faq-answer">If your print arrives damaged, I'll replace it at no cost — just photograph the damage and reach out within 5 days of delivery. Because prints are made to order, I can't accept returns on undamaged prints.</div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">How long until my print ships?</summary>
+            <div class="faq-answer">Most prints ship within 7–10 business days of payment confirmation. I'll keep you updated throughout the process and send tracking as soon as it ships.</div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banner" aria-labelledby="prints-cta-heading">
+      <div class="cta-inner">
+        <h2 id="prints-cta-heading">Ready to Order?</h2>
+        <p>Send an inquiry with the image name and size — TJ responds to every message personally, usually within 24 hours.</p>
+        <a href="index.html#contact" class="btn btn--primary">Start an Order</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-wordmark">True Nord</div>
+        <div class="footer-tagline">Photography</div>
+        <p>Minnesota landscape, wildlife, and nature photography. Fine art prints — signed and shipped from Minnesota.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <h4>Explore</h4>
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="prints.html">Prints</a>
+        <a href="about.html">About</a>
+      </nav>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>Minnesota</p>
+        <p><a href="mailto:tj@truenord.photo">tj@truenord.photo</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="footer-year"></span> True Nord. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+
+  <a href="#" class="back-to-top" aria-label="Back to top">↑ Top</a>
+
+</body>
+</html>
