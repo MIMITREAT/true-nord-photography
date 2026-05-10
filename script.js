@@ -91,6 +91,16 @@
     var cap    = item.getAttribute('data-caption') || ''
     if (lbImg) { lbImg.src = src || ''; lbImg.alt = cap }
     if (lbCaption) lbCaption.textContent = cap
+    if (lbImg && !lbImg.parentNode.classList.contains('lb-img-wrap')) {
+      var wrap = document.createElement('div')
+      wrap.className = 'lb-img-wrap'
+      lbImg.parentNode.insertBefore(wrap, lbImg)
+      wrap.appendChild(lbImg)
+      var wm = document.createElement('span')
+      wm.className = 'lightbox-watermark'
+      wm.textContent = '© True Nord'
+      wrap.appendChild(wm)
+    }
     lightbox.classList.add('open')
     document.body.style.overflow = 'hidden'
     lightbox.focus()
@@ -262,6 +272,31 @@
   })
 
   document.body.classList.add('js-loaded')
+
+  /* ── IMAGE PROTECTION ─────────────────────────────── */
+
+  /* 1. Disable right-click on all images */
+  document.addEventListener('contextmenu', function (e) {
+    if (e.target.tagName === 'IMG' || e.target.closest('.gallery-item, .photo-section, .feat-item, .print-card-img, .lightbox-inner, .lb-img-wrap')) {
+      e.preventDefault()
+    }
+  })
+
+  /* 2. Prevent drag on all images */
+  document.querySelectorAll('img').forEach(function (img) {
+    img.setAttribute('draggable', 'false')
+  })
+  document.addEventListener('dragstart', function (e) {
+    if (e.target.tagName === 'IMG') e.preventDefault()
+  })
+
+  /* 3. Block Ctrl+S, Ctrl+U, F12 */
+  document.addEventListener('keydown', function (e) {
+    var ctrl = e.ctrlKey || e.metaKey
+    if (ctrl && (e.key === 's' || e.key === 'S')) { e.preventDefault(); return }
+    if (ctrl && (e.key === 'u' || e.key === 'U')) { e.preventDefault(); return }
+    if (e.key === 'F12') { e.preventDefault(); return }
+  })
 
   /* ── HIDE NAV ON SCROLL DOWN, REVEAL ON SCROLL UP ── */
   var navbar = document.querySelector('.navbar')

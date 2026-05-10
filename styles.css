@@ -925,3 +925,56 @@ textarea { resize: vertical; min-height: 120px; }
   background: rgba(30,30,30,0.88);
   color: var(--white);
 }
+
+/* ── IMAGE PROTECTION ────────────────────────────────── */
+img {
+  -webkit-user-drag: none;
+  user-drag: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* ── WATERMARK ───────────────────────────────────────── */
+.lb-img-wrap {
+  position: relative;
+  display: inline-flex;
+  line-height: 0;
+}
+.lightbox-watermark {
+  position: absolute;
+  bottom: var(--space-sm);
+  right: var(--space-md);
+  font-family: var(--font-main);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.52);
+  text-shadow: 0 1px 4px rgba(0,0,0,0.9), 0 0 16px rgba(0,0,0,0.6);
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+  z-index: 10;
+}
+.photo-section::before,
+.gallery-item::before,
+.feat-item::before,
+.print-card-img::before,
+.landing-intro::before {
+  content: '© True Nord';
+  position: absolute;
+  bottom: var(--space-sm);
+  right: var(--space-md);
+  font-family: var(--font-main);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.52);
+  mix-blend-mode: overlay;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.9), 0 0 16px rgba(0,0,0,0.6);
+  z-index: 10;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
