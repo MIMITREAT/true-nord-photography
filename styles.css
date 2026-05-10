@@ -535,10 +535,14 @@ body {
 .print-card:hover .print-card-img img { transform: scale(1.04); }
 .print-card-badge {
   position: absolute; top: var(--space-sm); left: var(--space-sm);
-  background: var(--accent); color: #fff;
-  font-size: 0.65rem; font-weight: 700;
-  letter-spacing: 0.15em; text-transform: uppercase;
-  padding: 3px 10px; border-radius: 99px;
+  background: rgba(0,0,0,0.55);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  color: rgba(255,255,255,0.72);
+  font-size: 0.6rem; font-weight: 400;
+  letter-spacing: 0.2em; text-transform: uppercase;
+  padding: 4px 10px; border-radius: 2px;
+  border: 1px solid rgba(255,255,255,0.15);
 }
 .print-card-body { padding: var(--space-lg); }
 .print-card-body h3 {
