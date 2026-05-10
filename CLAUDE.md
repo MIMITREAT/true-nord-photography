@@ -63,27 +63,38 @@ Static HTML/CSS/JS photography portfolio and print shop for TJ Nordberg, a Minne
 
 | Branch | Purpose | URL |
 |--------|---------|-----|
-| `staging` | All active development | `staging.true-nord-photography.pages.dev` (auto-built by Cloudflare) |
-| `master` | Production only — never commit directly | `truenord.photo` (once domain is connected) |
+| `staging` | All active development | `staging.true-nord-photography.pages.dev` |
+| `master` | Production only — **never commit directly** | `truenord.photo` (once domain is connected) |
 
-**Rule:** All work happens on `staging`. Promote to production by running `deploy-and-purge.ps1`.
+## Deployment — 3-stage workflow
 
-## Deployment
-
+### Stage 1 — Local preview
+Make edits, then verify on local dev server before committing anything.
 ```powershell
-# 1. Preview locally (requires Node + Wrangler)
 npx wrangler pages dev . --port 3456
-
-# 2. Commit work on staging branch
-git add <files>
-git commit -m "..."
-git push origin staging   # triggers staging preview build
-
-# 3. Promote to production when ready
-.\deploy-and-purge.ps1    # merges staging -> master, pushes, optionally purges CDN cache
+# Open http://localhost:3456 and verify visually
 ```
 
-> Cache purge requires `$env:CF_ZONE_ID` and `$env:CF_API_TOKEN` to be set. Without them the script still deploys — CDN refreshes naturally within minutes.
+### Stage 2 — Staging
+Once local looks correct, commit and push to staging. Verify the live staging URL matches local exactly.
+```powershell
+git add <files>
+git commit -m "description of change"
+.\deploy-staging.ps1
+# Opens: https://staging.true-nord-photography.pages.dev
+# Compare against http://localhost:3456 — they must match before proceeding
+```
+
+### Stage 3 — Production
+Only after staging is verified and approved.
+```powershell
+.\deploy-and-purge.ps1
+# Merges staging -> master, pushes, optionally purges CDN cache
+```
+
+> `deploy-and-purge.ps1` cache purge requires `$env:CF_ZONE_ID` and `$env:CF_API_TOKEN`. Without them the deploy still completes — CDN refreshes naturally within minutes.
+
+**Never push directly to `master`.** Always go local → staging → production.
 
 ## Contact
 

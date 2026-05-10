@@ -25,7 +25,19 @@ if ($dirty) {
     exit 1
 }
 
-# 3. Merge staging into master
+# 3. Confirm local staging is in sync with origin/staging (staging must have been pushed first)
+git fetch origin staging --quiet
+$localSha  = git rev-parse staging
+$remoteSha = git rev-parse origin/staging
+if ($localSha -ne $remoteSha) {
+    Write-Host "ERROR: Local staging is ahead of origin/staging." -ForegroundColor Red
+    Write-Host "       Run .\deploy-staging.ps1 and verify the staging URL before promoting to production." -ForegroundColor Red
+    exit 1
+}
+
+Write-Host "  Staging verified: origin/staging matches local ($($localSha.Substring(0,7)))" -ForegroundColor DarkGray
+
+# 5. Merge staging into master
 Write-Host "`n[1/3] Merging staging -> master..." -ForegroundColor Yellow
 git checkout master
 git merge staging --ff-only
