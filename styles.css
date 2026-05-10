@@ -129,16 +129,20 @@ body {
 /* ── NAVBAR ──────────────────────────────────────────── */
 .navbar {
   position: fixed; top: 0; left: 0; right: 0; z-index: 200;
-  background: rgba(8,8,8,0.92);
-  backdrop-filter: blur(var(--vivere-blur));
-  -webkit-backdrop-filter: blur(var(--vivere-blur));
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-  transition: transform 0.35s ease, box-shadow 0.3s;
+  background: rgba(8,8,8,0.12);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-bottom: 1px solid transparent;
+  transition: transform 0.35s ease, background 0.4s ease, border-color 0.4s ease, box-shadow 0.3s;
 }
 .navbar--hidden {
   transform: translateY(-100%);
 }
-.navbar--scrolled { box-shadow: 0 4px 24px rgba(0,0,0,0.4); }
+.navbar--scrolled {
+  background: rgba(8,8,8,0.96);
+  border-bottom-color: rgba(255,255,255,0.08);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+}
 .navbar-inner {
   display: flex; align-items: center; justify-content: space-between;
   padding: var(--space-md) var(--space-lg);
@@ -372,21 +376,28 @@ body {
 
 /* ── MASONRY GALLERY ─────────────────────────────────── */
 .gallery-filter {
-  display: flex; gap: var(--space-sm); flex-wrap: wrap;
-  justify-content: center; margin-bottom: var(--space-2xl);
+  display: flex; gap: 0; flex-wrap: wrap;
+  justify-content: center; margin-bottom: var(--space-xl);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 .filter-btn {
-  padding: var(--space-xs) var(--space-lg);
-  border: 2px solid var(--border-strong);
-  border-radius: 99px;
+  padding: var(--space-sm) var(--space-lg);
+  border: none;
+  border-bottom: 2px solid transparent;
+  border-radius: 0;
   background: transparent;
-  font-size: var(--text-sm); font-weight: 600;
-  color: var(--fg-secondary);
-  transition: var(--transition);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: var(--text-base);
+  font-weight: 400;
+  color: rgba(255,255,255,0.38);
+  transition: color 0.22s, border-color 0.22s;
+  margin-bottom: -1px;
 }
-.filter-btn:hover { border-color: var(--accent); color: var(--accent); }
+.filter-btn:hover { color: rgba(255,255,255,0.78); border-color: rgba(255,255,255,0.25); }
 .filter-btn.active {
-  background: var(--accent); border-color: var(--accent); color: #fff;
+  background: transparent; border-color: var(--accent);
+  color: var(--white); font-style: normal; font-weight: 600;
 }
 .gallery-masonry {
   columns: 1; column-gap: 3px;
@@ -493,11 +504,10 @@ body {
 /* ── PRINT SHOP ──────────────────────────────────────── */
 .print-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 380px));
   gap: var(--space-xl);
+  justify-content: center;
 }
-@media (min-width: 640px) { .print-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (min-width: 1024px) { .print-grid { grid-template-columns: repeat(3, 1fr); } }
 
 .print-card {
   background: var(--glass-bg);
@@ -669,6 +679,20 @@ body {
 .btn--outline:hover { background: var(--accent); color: #fff; }
 .btn--full { width: 100%; }
 .btn--sm { padding: var(--space-xs) var(--space-lg); font-size: var(--text-sm); }
+/* Nav CTA — editorial ghost style, not SaaS orange pill */
+.navbar-mobile .btn--primary {
+  background: transparent;
+  color: var(--accent-light);
+  border-color: rgba(200,121,65,0.45);
+  letter-spacing: 0.12em;
+  font-size: var(--text-xs);
+}
+.navbar-mobile .btn--primary:hover {
+  background: rgba(200,121,65,0.12);
+  border-color: var(--accent-light);
+  transform: none;
+  box-shadow: none;
+}
 .btn--dark {
   background: var(--black-900); color: #fff; border-color: var(--black-900);
 }
@@ -769,7 +793,19 @@ textarea { resize: vertical; min-height: 120px; }
 .split-row .scroll-slide-right { transition-delay: 0.1s; }
 
 /* ── FOOTER ──────────────────────────────────────────── */
-.site-footer { background: var(--black-950); color: var(--silver-light); }
+.site-footer {
+  background: var(--black-950);
+  color: var(--silver-light);
+  border-top: 1px solid rgba(200,121,65,0.35);
+  position: relative;
+}
+.site-footer::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(to right, transparent, var(--accent) 30%, var(--accent-light) 50%, var(--accent) 70%, transparent);
+}
 .footer-inner {
   max-width: 1280px; margin: 0 auto;
   padding: var(--space-4xl) var(--space-lg) var(--space-2xl);

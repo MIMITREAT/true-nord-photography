@@ -65,23 +65,36 @@
     }
     /* Pull quote */
     .pull-quote {
-      border-left: 4px solid var(--accent);
-      padding-left: var(--space-xl);
+      position: relative;
+      border-left: 3px solid var(--accent);
+      padding: var(--space-lg) 0 var(--space-lg) var(--space-2xl);
       margin: var(--space-2xl) 0;
+    }
+    .pull-quote::before {
+      content: '\201C';
+      position: absolute;
+      top: -0.15em;
+      left: -0.05em;
+      font-family: var(--font-display);
+      font-size: 7rem;
+      line-height: 1;
+      color: rgba(200,121,65,0.18);
+      pointer-events: none;
     }
     .pull-quote p {
       font-family: var(--font-display);
-      font-size: var(--text-2xl);
+      font-size: clamp(1.5rem, 2.5vw + 0.5rem, 2.25rem);
       font-style: italic;
-      line-height: 1.5;
+      line-height: 1.45;
       color: var(--fg-primary) !important;
-      margin-bottom: var(--space-sm) !important;
+      margin-bottom: var(--space-md) !important;
     }
     .pull-quote cite {
       font-size: var(--text-sm);
       color: var(--accent);
       font-weight: 600;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
     }
     /* Timeline */
     .timeline {
@@ -180,7 +193,7 @@
         <div class="split-row">
           <div class="split-row__image split-row__image--tall scroll-slide-left">
             <div style="aspect-ratio:3/4;border-radius:1rem;overflow:hidden;box-shadow:0 20px 40px -8px rgba(0,0,0,0.2);background:linear-gradient(160deg,#1a3020,#0d2233);display:flex;align-items:center;justify-content:center">
-              <span style="color:rgba(255,255,255,0.15);font-family:Georgia,serif;font-size:1rem;text-align:center;padding:2rem">TJ Nordberg — Portrait<br><span style="font-size:0.75rem;opacity:0.6">Replace: assets/portrait.webp</span></span>
+              <span style="color:transparent;font-family:Georgia,serif;font-size:1rem;text-align:center;padding:2rem">TJ Nordberg — Portrait</span>
             </div>
           </div>
           <div class="split-row__content scroll-slide-right">

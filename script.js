@@ -10,8 +10,8 @@
   if (navbar) {
     var ticking = false
     function updateNav () {
-      navbar.classList.toggle('navbar--scrolled',
-        (window.scrollY || window.pageYOffset) > 60)
+      var scrollY = window.scrollY || window.pageYOffset
+      navbar.classList.toggle('navbar--scrolled', scrollY > 80)
       ticking = false
     }
     window.addEventListener('scroll', function () {
