@@ -176,9 +176,28 @@
     }
   }
 
+  /* ── GALLERY CAPTIONS — inject for touch devices ──── */
+  document.querySelectorAll('.gallery-item').forEach(function (item) {
+    var cap = item.getAttribute('data-caption')
+    if (cap) {
+      var el = document.createElement('span')
+      el.className = 'gallery-item__caption'
+      el.textContent = cap
+      item.appendChild(el)
+    }
+  })
+
   /* ── GALLERY FILTER ───────────────────────────────── */
-  var filterBtns  = document.querySelectorAll('.filter-btn')
+  var filterBtns   = document.querySelectorAll('.filter-btn')
   var galleryItems = document.querySelectorAll('.gallery-item')
+  var galleryMasonry = document.querySelector('.gallery-masonry')
+  var noResults = (function () {
+    var el = document.createElement('p')
+    el.className = 'gallery-no-results'
+    el.textContent = 'No images in this collection yet — check back soon.'
+    if (galleryMasonry) galleryMasonry.parentNode.insertBefore(el, galleryMasonry.nextSibling)
+    return el
+  })()
 
   if (filterBtns.length && galleryItems.length) {
     filterBtns.forEach(function (btn) {
@@ -186,14 +205,17 @@
         filterBtns.forEach(function (b) { b.classList.remove('active') })
         btn.classList.add('active')
         var filter = btn.getAttribute('data-filter')
+        var visible = 0
         galleryItems.forEach(function (item) {
           var cat = item.getAttribute('data-category') || ''
           if (filter === 'all' || cat === filter) {
             item.classList.remove('gallery-item--hidden')
+            visible++
           } else {
             item.classList.add('gallery-item--hidden')
           }
         })
+        noResults.classList.toggle('visible', visible === 0)
       })
     })
   }
@@ -324,6 +346,15 @@
         navbar.classList.remove('navbar--hidden')
       }
       lastScrollY = current
+    }, { passive: true })
+  }
+
+  /* ── SCROLL HINT FADE ────────────────────────────── */
+  var scrollHint = document.querySelector('.landing-scroll-hint')
+  if (scrollHint) {
+    window.addEventListener('scroll', function () {
+      var opacity = Math.max(0, 1 - window.scrollY / 120)
+      scrollHint.style.opacity = opacity
     }, { passive: true })
   }
 
