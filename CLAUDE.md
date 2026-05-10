@@ -76,12 +76,15 @@ npx wrangler pages dev . --port 3456
 ```
 
 ### Stage 2 — Staging
-Once local looks correct, commit and push to staging. Verify the live staging URL matches local exactly.
+Once local looks correct, commit then run `deploy-staging.ps1`. The script:
+1. Pushes git history to `origin/staging` (version control)
+2. Runs `wrangler pages deploy` to push local files **directly** to Cloudflare Pages staging branch — this is what actually updates the staging URL immediately (no dashboard branch preview config needed)
+
 ```powershell
 git add <files>
 git commit -m "description of change"
 .\deploy-staging.ps1
-# Opens: https://staging.true-nord-photography.pages.dev
+# Deploys to: https://staging.true-nord-photography.pages.dev
 # Compare against http://localhost:3456 — they must match before proceeding
 ```
 
