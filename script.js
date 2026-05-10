@@ -236,13 +236,27 @@
         if (type === 'success') setTimeout(function () { el.remove() }, 8000)
       }
 
-      /* Replace with EmailJS or Formspree in production */
-      setTimeout(function () {
-        showMsg("Thanks! I'll be in touch soon about your print inquiry.", 'success')
-        contactForm.reset()
+      /* ✏️ EDIT: replace YOUR_FORMSPREE_ID with your Formspree form ID from formspree.io */
+      fetch('https://formspree.io/f/YOUR_FORMSPREE_ID', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: new FormData(contactForm)
+      })
+      .then(function (res) {
+        if (res.ok) {
+          showMsg("Thanks! I'll be in touch soon about your print inquiry.", 'success')
+          contactForm.reset()
+        } else {
+          showMsg('Something went wrong — please email tj@truenord.photo directly.', 'error')
+        }
+      })
+      .catch(function () {
+        showMsg('Something went wrong — please email tj@truenord.photo directly.', 'error')
+      })
+      .finally(function () {
         btn.disabled = false
         btn.textContent = orig
-      }, 1200)
+      })
     })
   }
 
