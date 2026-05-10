@@ -9,7 +9,12 @@ assets/Photos/
 
 # Node / image pipeline temp files
 node_modules/
+package.json
+package-lock.json
 *.log
+
+# Lighthouse reports
+lighthouse-*.json
 
 # OS
 .DS_Store
