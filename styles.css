@@ -660,9 +660,9 @@ body {
   cursor: pointer; transition: var(--transition); text-align: center;
   white-space: nowrap;
 }
-.btn--primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+.btn--primary { background: var(--accent-dark); color: #fff; border-color: var(--accent-dark); }
 .btn--primary:hover {
-  background: var(--accent-dark); border-color: var(--accent-dark);
+  background: #7a4520; border-color: #7a4520;
   transform: translateY(-2px); box-shadow: var(--shadow-md);
 }
 .btn--outline { background: transparent; color: var(--accent); border-color: var(--accent); }
@@ -693,6 +693,15 @@ input:focus, textarea:focus, select:focus {
   box-shadow: 0 0 0 3px rgba(200,121,65,0.15);
 }
 textarea { resize: vertical; min-height: 120px; }
+::placeholder { color: #767676; opacity: 1; }
+@media (prefers-color-scheme: dark) {
+  input, textarea, select {
+    background: var(--black-800);
+    color: var(--chrome);
+    border-color: rgba(255,255,255,0.15);
+  }
+  ::placeholder { color: #a0a0a0; opacity: 1; }
+}
 .form-success-message {
   background: #f0fdf4; border: 1px solid #86efac;
   color: #166534; padding: var(--space-md);
